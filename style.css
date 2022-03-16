@@ -96,7 +96,7 @@ h4 {
     width: 12rem;
 }
 
-.profile-image, {
+.profile-image {
     margin: 0;
     padding: 0;
 }
@@ -128,7 +128,7 @@ h4 {
 .top-nav {
     display: flex;
     flex: auto;
-    width: auto%;
+    width: auto;
     justify-content: center;
     margin-top: 2rem;
 }
