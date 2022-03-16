@@ -24,6 +24,7 @@ html {
 
 body {
     background-color: rgba(255, 255, 255, 0);
+    margin-bottom: 2rem;
 }
 
 header {
@@ -89,7 +90,7 @@ h4 {
     width: 12rem;
 }
 
-.profile-image, {
+.profile-image {
     margin: 0;
     padding: 0;
 }
@@ -121,7 +122,7 @@ h4 {
 .top-nav {
     display: flex;
     flex: auto;
-    width: auto%;
+    width: auto;
     justify-content: center;
     margin-top: 2rem;
 }
@@ -289,15 +290,33 @@ h4 {
 
 .contact-links {
     background-color: yellow;
+    justify-content: space-evenly;
     display: flex;
     margin: auto;
     margin: 1.5rem auto;
     padding: 0 2rem 0 3rem;
-
 }
 
 .social-icon {
+    display: flex;
     height: 4rem;
+    padding: 0;
+}
+
+.nes-container .social-icon {
+    padding: 0;
+}
+
+#twitter {
+    background-color: blue;
+}
+
+#linkedin {
+    background-color: rgb(57, 130, 189);
+}
+
+#github {
+    background-color: #000;
 }
 
 /**** GENERAL ****/
