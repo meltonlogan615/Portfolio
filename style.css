@@ -4,6 +4,11 @@
     --subtitle-color: #424242
 }
 
+@font-face {
+    font-family: player2;
+    src: url(PressStart2P-Regular.ttf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -23,6 +28,8 @@ html {
 }
 
 body {
+    font-family: player2;
+
     background-color: rgba(255, 255, 255, 0);
 }
 
