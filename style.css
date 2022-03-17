@@ -38,13 +38,13 @@ header {
     margin-bottom: 2rem;
 }
 
-summary {
+details > summary {
     outline: none;
+    list-style-image: url(pics/listItem.png);
 }
 
 article {
     margin-bottom: 2rem;
-    /* background-color: goldenrod; */
 }
 
 section > .container {
@@ -80,9 +80,12 @@ h4 {
     color: var(--text-color);
 }
 
+li {
+    list-style-image: url(pics/listItem.png);
+}
+
 .hero {
     display: flex;
-    /* align-items: center; */
     justify-content: center;
 } 
 
@@ -92,7 +95,6 @@ h4 {
 }
 
 .hero > img {
-    /* border-radius: 50%; */
     height: 12rem;
     width: 12rem;
 }
@@ -170,24 +172,23 @@ h4 {
 .about-text {
     margin: 0.5rem 0;
     padding: 0rem 2rem 0 3rem;
-    text-align: justify;
     width: 50%;
     line-height: 1.25rem;
 }
 
 
 .content-section {
-    /* background-color: antiquewhite; */
     display: flex;
     justify-content: space-around;
     width: 100%;
     margin-top: 1.5rem;
 }
 
-
 .verbage {
-    display: block;
-    width: 40%;   
+    display: inline-block;
+    width: 40%; 
+    text-align: start;
+    margin-left: -4rem;
 }
 
 .article-title {
@@ -208,29 +209,34 @@ h4 {
 
 .verbage .verbage-text {
     margin-bottom: 1.5rem;
-    padding: 0 2rem 0 3rem;
-    text-align: justify;
+    /* padding: 0 2rem 0 3rem; */
     line-height: 1.25rem;
 }
 
 .details-title {
     font-size: 1.125rem;
-    font-weight: 400;
 }
 
+
+.feature-list {
+    margin-top: 10rem;
+    text-decoration: underline;
+}
 
 .details-text {
-    color: orangered;
+    color: rgb(35, 37, 39);
     text-indent: 0.5rem;
+    text-align: start;
+    margin-bottom: 1rem;
 }
 
-.content-list li {
+.content-list > li {
     list-style-type: none;
     margin: 0.125rem 0;
 }
 
 .work-details li {
-    list-style-type: square;
+    list-style-type: none;
     list-style-position: inside;
     font-size: 0.9rem;
 }
@@ -315,7 +321,7 @@ h4 {
 }
 
 #twitter {
-    background-color: blue;
+    background-color: rgb(77, 152, 247);
 }
 
 #linkedin {
