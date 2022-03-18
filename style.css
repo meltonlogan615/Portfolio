@@ -81,7 +81,7 @@ h4 {
 }
 
 li {
-    list-style-image: url(pics/listItem.png);
+    list-style-type: none;
 }
 
 .hero {
@@ -103,8 +103,6 @@ li {
     margin: 0;
     padding: 0;
 }
-
-
 
 .hero-text {
     display: block;
@@ -220,7 +218,6 @@ li {
 
 .feature-list {
     margin-top: 10rem;
-    text-decoration: underline;
 }
 
 .details-text {
@@ -236,7 +233,7 @@ li {
 }
 
 .work-details li {
-    list-style-type: none;
+    list-style-type: square;
     list-style-position: inside;
     font-size: 0.9rem;
 }
