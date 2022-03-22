@@ -53,23 +53,25 @@
                                 Create an app that shows "Flrodia Man" articles for the current
                                 date in previous years.
                             </p>
-                        </details  class="lists">
+                        </details class="lists">
                         <!-- Desired Features -->
                         <details>
                             <summary class="details-title">Features:</summary>
-                                <ul class="nes-container is-rounded glass details-text work-details">
-                                    <li>Ability To Share Articles</li>
-                                    <li>Search by Date</li>
-                                </ul>
+                            <ul class="nes-container is-rounded glass details-text work-details">
+                                <li>Ability To Share Articles</li>
+                                <li>Search by Date</li>
+                            </ul>
                         </details>
                         <!-- Process -->
                         <details>
                             <summary class="details-title">Process:</summary>
                             <p class="nes-container is-rounded glass details-text">
-                                This project was pretty cut and dry. Once the API was in place, the build was pretty intuitive.
-                                <br >
+                                This project was pretty cut and dry. Once the API was in place, the build was pretty
+                                intuitive.
+                                <br>
                                 Custom UITableViewCells were used rather than default configurations.
-                                Unfortunately, Apple's API for UIDatePicker does not allow for only Month and Date selections.
+                                Unfortunately, Apple's API for UIDatePicker does not allow for only Month and Date
+                                selections.
                                 Can be futher iterated upon and provide a cleaner UX.
                             </p>
                         </details>
@@ -88,17 +90,19 @@
                             </p>
                         </details>
                     </div>
-                    <button type="button" class="nes-btn is-primary code-link">
-                        <a href="https://github.com/meltonlogan615/FloridaMan" target="blank_" >View on
-                            GitHub</a>
+                    <a href="https://github.com/meltonlogan615/FloridaMan" target="blank_">
+                        <button type="button" class="nes-btn is-primary code-link">
+                            View on GitHub
                         </button>
+                    </a>
                 </article>
                 <article class="content-image">
-                    <img src="pics/FM/Launch.jpg" alt="Screenshot of Florida Man Launch Screen" 
+                    <img src="pics/FM/Launch.jpg" alt="Screenshot of Florida Man Launch Screen"
                         class="nes-container is-rounded app-image">
-                    <img src="pics/FM/List.jpg" alt="Screenshot of table listing Florida Man news articles for March 15" 
+                    <img src="pics/FM/List.jpg" alt="Screenshot of table listing Florida Man news articles for March 15"
                         class="app-image nes-container is-rounded">
-                    <img src="pics/FM/Search.jpg" alt="Screenshot of date picker to select a date to return Flrodia Man news articles" 
+                    <img src="pics/FM/Search.jpg"
+                        alt="Screenshot of date picker to select a date to return Flrodia Man news articles"
                         class="app-image nes-container is-rounded">
                 </article>
             </div>
@@ -135,19 +139,23 @@
                         <details class="lists">
                             <summary class="details-title">Process:</summary>
                             <ul class="nes-container is-rounded glass details-text">
-                                    <li>Phase 1</li>
-                                    <ul class="work-details">
-                                        <li>Develop algorithm to effectively sort and organize ingredients and instructions</li>
-                                        <li>Find API that provides the required data</li>
-                                    </ul>
-                                    <hr class="divider">
-                                    <li>Phase 2</li>
-                                    <ul class="work-details">
-                                        <li>Build custom UITableViewCells to ensure correct layout</li>
-                                        <li>Reduce heirachtical complexity into a flattened response</li>
-                                    </ul>
+                                <li>Phase 1</li>
+                                <ul class="work-details">
+                                    <li>
+                                        Develop algorithm to effectively sort and organize ingredients and instructions
+                                    </li>
+                                    <li>
+                                        Find API that provides the required data
+                                    </li>
+                                </ul>
+                                <hr class="divider">
+                                <li>Phase 2</li>
+                                <ul class="work-details">
+                                    <li>Build custom UITableViewCells to ensure correct layout</li>
+                                    <li>Reduce heirachtical complexity into a flattened response</li>
+                                </ul>
 
-                            <ul>
+                                <ul>
                         </details>
 
                         <!-- Challenges -->
@@ -159,21 +167,27 @@
                                 The recipe in current use makes liberal use of Optionals and Nested JSON properties.
                                 This slowed development down significantly.
                                 <br>
-                                With every object property being Optional, checks are spread through out, including a dedicated
-                                object model that only contained a static function to parse the network call results into a [String: String] Dictionary.
-                                This had the added benefit of not having to convert data types into Unwrapped Strings, which again, would require unwrapping of 
+                                With every object property being Optional, checks are spread through out, including a
+                                dedicated
+                                object model that only contained a static function to parse the network call results
+                                into a [String: String] Dictionary.
+                                This had the added benefit of not having to convert data types into Unwrapped Strings,
+                                which again, would require unwrapping of
                                 Optionals.
                                 <br>
-                                As for the Nested JSON properties, the first approach involved the strict heirachy that is an exact match for the network results.
-                                This was followed by CodingKey Pattern, where all properties, including nested properties were defined withing the original model, 
+                                As for the Nested JSON properties, the first approach involved the strict heirachy that
+                                is an exact match for the network results.
+                                This was followed by CodingKey Pattern, where all properties, including nested
+                                properties were defined withing the original model,
                                 and immediately followed with an Enumuration that conforms to the CodingKey protocol.
                             </p>
                         </details>
                     </div>
-                    <button type="button" class="nes-btn is-primary code-link">
-                        <a href="https://github.com/meltonlogan615/StagedCooking-II" target="blank_">View on
-                            GitHub</a>
-                    </button>
+                    <a href="https://github.com/meltonlogan615/StagedCooking-II" target="blank_">
+                        <button type="button" class="nes-btn is-primary code-link">
+                            View on GitHub
+                        </button>
+                    </a>
                 </article>
                 <article class="content-image">
                     <img src="pics/Staged/Staged-Search.jpg" alt="" class="nes-container is-rounded app-image">
@@ -221,25 +235,29 @@
                             </summary>
 
                             <p class="nes-container is-rounded glass details-text">
-                                The original networking methods were extremely limited. These were converted to using Generics for response and JSON decoding.
+                                The original networking methods were extremely limited. These were converted to using
+                                Generics for response and JSON decoding.
                                 <br>
-                                Additionally, providing each view with full networking call and parsing was unweildy. These were extracted into an external 
+                                Additionally, providing each view with full networking call and parsing was unweildy.
+                                These were extracted into an external
                                 layer to provide portability and has since become my default networking scheme.
                             </p>
                         </details>
                     </div>
-                    <button type="button" class="nes-btn is-primary code-link">
-                        <a href="https://github.com/meltonlogan615/Ghibli-UIKit-TableView" target="blank_">View on
-                            GitHub</a>
-                    </button>
+                    <a href="https://github.com/meltonlogan615/Ghibli-UIKit-TableView" target="blank_">
+                        <button type="button" class="nes-btn is-primary code-link">
+                            View on GitHub
+                        </button>
+                    </a>
 
                 </article>
                 <article class="content-image">
-                    <img src="pics/Ghibli/Launch.jpg" alt="Screenshot showing Studio Ghibli Logo" 
+                    <img src="pics/Ghibli/Launch.jpg" alt="Screenshot showing Studio Ghibli Logo"
                         class="nes-container is-rounded app-image">
-                    <img src="pics/Ghibli/List.jpg" alt="Screenshot showing a table list of Studio Ghibli films" 
+                    <img src="pics/Ghibli/List.jpg" alt="Screenshot showing a table list of Studio Ghibli films"
                         class="nes-container is-rounded app-image">
-                    <img src="pics/Ghibli/Details.jpg" alt="" class="nes-container is-rounded app-image">
+                    <img src="pics/Ghibli/Details.jpg" alt="Screenshot showing details of Castle in the Sky"
+                        class="nes-container is-rounded app-image">
 
                 </article>
             </div>
@@ -274,34 +292,49 @@
                             <ul class="nes-container is-rounded glass details-text">
                                 <li>Phase 1</li>
                                 <ul class="work-details">
-                                    <li>Generate game board & food at random location within game board area</li>
-                                    <li>Generate snake at a random position with an initial direction and velocity towards the center of the game board</li>
+                                    <li>
+                                        Generate game board & food at random location within game board area
+                                    </li>
+                                    <li>
+                                        Generate snake at a random position with an initial direction and velocity
+                                        towards the center of the game board
+                                    </li>
                                 </ul>
                                 <hr class="divider">
                                 <li>Phase 2</li>
                                 <ul class="work-details">
-                                    <li>When snake eats the food, that food instance is removed and new instance is placed at another random location on the game board</li>
-                                    <li>Create a new snake segment to append onto the "end" of the existing snake. "End" is defined as the opposite side of current direction to the last segement</li>
+                                    <li>
+                                        When snake eats the food, that food instance is removed and new instance is
+                                        placed at another random location on the game board
+                                    </li>
+                                    <li>
+                                        Create a new snake segment to append onto the "end" of the existing snake. "End"
+                                        is defined as the opposite side of current direction to the last segement
+                                    </li>
                                 </ul>
-                            </p>
+                                </p>
                         </details>
 
                         <!-- Challenges -->
                         <details>
                             <summary class="details-title">Challenges:</summary>
                             <p class="nes-container is-rounded glass details-text">
-                                The primary challenge of this project was largely the limitations of SceneKit and SpriteKit.<br>
-                                The interactions between a physics elements in complex organizisms, as I have found, is not ideal within the frameworks.<br>
-                                A number of approaches were applied to resolve the issues of the snake itself, including an indepth dive into SKPhysicsJoints & SKPhysicsBodies.
+                                The primary challenge of this project was largely the limitations of SceneKit and
+                                SpriteKit.<br>
+                                The interactions between a physics elements in complex organizisms, as I have found, is
+                                not ideal within the frameworks.<br>
+                                A number of approaches were applied to resolve the issues of the snake itself, including
+                                an indepth dive into SKPhysicsJoints & SKPhysicsBodies.
                             </p>
                         </details>
 
 
                     </div>
-                    <button type="button" class="nes-btn is-primary code-link">
-                        <a href="https://github.com/meltonlogan615/SwipeSnake" target="blank_">View on
-                            GitHub</a>
-                    </button>
+                    <a href="https://github.com/meltonlogan615/SwipeSnake" target="blank_">‘
+                        <button type="button" class="nes-btn is-primary code-link">
+                            View on GitHub
+                        </button>
+                    </a>
 
                 </article>
                 <article class="content-image">
