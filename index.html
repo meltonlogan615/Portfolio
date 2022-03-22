@@ -67,7 +67,7 @@
                             <summary class="details-title">Process:</summary>
                             <p class="nes-container is-rounded glass details-text">
                                 This project was pretty cut and dry. Once the API was in place, the build was pretty intuitive.
-                                <br style="margin-bottom: 2rem;">
+                                <br >
                                 Custom UITableViewCells were used rather than default configurations.
                                 Unfortunately, Apple's API for UIDatePicker does not allow for only Month and Date selections.
                                 Can be futher iterated upon and provide a cleaner UX.
@@ -140,6 +140,7 @@
                                         <li>Develop algorithm to effectively sort and organize ingredients and instructions</li>
                                         <li>Find API that provides the required data</li>
                                     </ul>
+                                    <hr class="divider">
                                     <li>Phase 2</li>
                                     <ul class="work-details">
                                         <li>Build custom UITableViewCells to ensure correct layout</li>
@@ -255,12 +256,14 @@
                         <!-- Scope -->
                         <details>
                             <summary class="details-title">Scope:</summary>
-                            <p class="nes-container is-rounded glass details-text">Blah, blah, blah</p>
+                            <p class="nes-container is-rounded glass details-details">
+                                Build a simple, gesture based Snake Game based on the classic Nokia 3310 game.
+                            </p>
                         </details>
                         <!-- Desired Features -->
                         <details>
                             <summary class="details-title">Features:</summary>
-                            <ul class="nes-container is-rounded glass details-text">
+                            <ul class="nes-container is-rounded glass work-details">
                                 <li>Change Direction Based On Swipe Directions</li>
                                 <li>Game Board Not A Defined Grid</li>
                             </ul>
@@ -268,13 +271,29 @@
                         <!-- Process -->
                         <details>
                             <summary class="details-title">Process:</summary>
-                            <p class="nes-container is-rounded glass details-text">Blah, blah, blah</p>
+                            <ul class="nes-container is-rounded glass details-text">
+                                <li>Phase 1</li>
+                                <ul class="work-details">
+                                    <li>Generate game board & food at random location within game board area</li>
+                                    <li>Generate snake at a random position with an initial direction and velocity towards the center of the game board</li>
+                                </ul>
+                                <hr class="divider">
+                                <li>Phase 2</li>
+                                <ul class="work-details">
+                                    <li>When snake eats the food, that food instance is removed and new instance is placed at another random location on the game board</li>
+                                    <li>Create a new snake segment to append onto the "end" of the existing snake. "End" is defined as the opposite side of current direction to the last segement</li>
+                                </ul>
+                            </p>
                         </details>
 
                         <!-- Challenges -->
                         <details>
                             <summary class="details-title">Challenges:</summary>
-                            <p class="nes-container is-rounded glass details-text">Blah, blah, blah</p>
+                            <p class="nes-container is-rounded glass details-text">
+                                The primary challenge of this project was largely the limitations of SceneKit and SpriteKit.<br>
+                                The interactions between a physics elements in complex organizisms, as I have found, is not ideal within the frameworks.<br>
+                                A number of approaches were applied to resolve the issues of the snake itself, including an indepth dive into SKPhysicsJoints & SKPhysicsBodies.
+                            </p>
                         </details>
 
 
@@ -286,8 +305,10 @@
 
                 </article>
                 <article class="content-image">
-                    <img src="pics/iphone.png" alt="" class="nes-container is-rounded app-image">
-                    <img src="pics/iphone.png" alt="" class="nes-container is-rounded app-image">
+                    <img src="pics/Snake/Snake-Start.jpg" alt="" class="nes-container is-rounded app-image">
+                    <img src="pics/Snake/Snake-GamePlay.jpg" alt="" class="nes-container is-rounded app-image">
+                    <img src="pics/Snake/Snake-GameOver.jpg" alt="" class="nes-container is-rounded app-image">
+
                 </article>
             </div>
         </div>
