@@ -132,18 +132,21 @@
                             </ul>
                         </details>
                         <!-- Process -->
-                        <details>
+                        <details class="lists">
                             <summary class="details-title">Process:</summary>
-                            <p class="nes-container is-rounded glass details-text">
-                                <ul>
+                            <ul class="nes-container is-rounded glass details-text">
                                     <li>Phase 1</li>
                                     <ul class="work-details">
                                         <li>Develop algorithm to effectively sort and organize ingredients and instructions</li>
                                         <li>Find API that provides the required data</li>
-                                        <li></li>
                                     </ul>
-                                </ul>
-                            </p>
+                                    <li>Phase 2</li>
+                                    <ul class="work-details">
+                                        <li>Build custom UITableViewCells to ensure correct layout</li>
+                                        <li>Reduce heirachtical complexity into a flattened response</li>
+                                    </ul>
+
+                            <ul>
                         </details>
 
                         <!-- Challenges -->
@@ -172,8 +175,10 @@
                     </button>
                 </article>
                 <article class="content-image">
-                    <img src="pics/iphone.png" alt="" class="nes-container is-rounded app-image">
-                    <img src="pics/iphone.png" alt="" class="nes-container is-rounded app-image">
+                    <img src="pics/Staged/Staged-Search.jpg" alt="" class="nes-container is-rounded app-image">
+                    <img src="pics/Staged/Staged-List.jpg" alt="" class="nes-container is-rounded app-image">
+                    <img src="pics/Staged/Staged-Recipe.jpg" alt="" class="nes-container is-rounded app-image">
+
                 </article>
             </div>
         </div>
@@ -191,7 +196,7 @@
                         <details>
                             <summary class="details-title">Scope:</summary>
                             <p class="nes-container is-rounded glass details-text">
-
+                                Provide a resource to view details on all Studio Ghibli films.
                             </p>
                         </details>
                         <!-- Desired Features -->
@@ -215,6 +220,10 @@
                             </summary>
 
                             <p class="nes-container is-rounded glass details-text">
+                                The original networking methods were extremely limited. These were converted to using Generics for response and JSON decoding.
+                                <br>
+                                Additionally, providing each view with full networking call and parsing was unweildy. These were extracted into an external 
+                                layer to provide portability and has since become my default networking scheme.
                             </p>
                         </details>
                     </div>
