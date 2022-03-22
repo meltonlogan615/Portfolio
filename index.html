@@ -19,7 +19,7 @@
         <div class="hero">
             <div class="nes-container is-rounded hero-text glass" style="margin-bottom: 4rem;">
                 <h1 class="page-title">Logan Melton</h1>
-                <div class="page-subtitle">iOS Developer, Amatuer </div>
+                <div class="page-subtitle">iOS Developer</div>
             </div>
             <img src="pics/profile.png" alt="Picture of Logan" class="nes-container is-rounded profile-image glass">
         </div>
@@ -57,7 +57,7 @@
                         <!-- Desired Features -->
                         <details>
                             <summary class="details-title">Features:</summary>
-                                <ul class="nes-container is-rounded glass details-text">
+                                <ul class="nes-container is-rounded glass details-text work-details">
                                     <li>Ability To Share Articles</li>
                                     <li>Search by Date</li>
                                 </ul>
@@ -66,7 +66,11 @@
                         <details>
                             <summary class="details-title">Process:</summary>
                             <p class="nes-container is-rounded glass details-text">
-
+                                This project was pretty cut and dry. Once the API was in place, the build was pretty intuitive.
+                                <br style="margin-bottom: 2rem;">
+                                Custom UITableViewCells were used rather than default configurations.
+                                Unfortunately, Apple's API for UIDatePicker does not allow for only Month and Date selections.
+                                Can be futher iterated upon and provide a cleaner UX.
                             </p>
                         </details>
 
@@ -90,9 +94,12 @@
                         </button>
                 </article>
                 <article class="content-image">
-                    <img src="pics/FM/Launch.jpg" alt="" class="nes-container is-rounded app-image">
-                    <img src="pics/FM/List.jpg" alt="" class="app-image nes-container is-rounded">
-                    <img src="pics/FM/Search.jpg" alt="" class="app-image nes-container is-rounded">
+                    <img src="pics/FM/Launch.jpg" alt="Screenshot of Florida Man Launch Screen" 
+                        class="nes-container is-rounded app-image">
+                    <img src="pics/FM/List.jpg" alt="Screenshot of table listing Florida Man news articles for March 15" 
+                        class="app-image nes-container is-rounded">
+                    <img src="pics/FM/Search.jpg" alt="Screenshot of date picker to select a date to return Flrodia Man news articles" 
+                        class="app-image nes-container is-rounded">
                 </article>
             </div>
         </div>
@@ -117,7 +124,7 @@
                         <!-- Desired Features -->
                         <details class="lists">
                             <summary class="details-title">Features:</summary>
-                            <ul class="nes-container is-rounded glass details-text">
+                            <ul class="nes-container is-rounded glass details-text work-details">
                                 <li>Save Search History</li>
                                 <li>Save Viewed History</li>
                                 <li>Save Favorites</li>
@@ -128,7 +135,14 @@
                         <details>
                             <summary class="details-title">Process:</summary>
                             <p class="nes-container is-rounded glass details-text">
-
+                                <ul>
+                                    <li>Phase 1</li>
+                                    <ul class="work-details">
+                                        <li>Develop algorithm to effectively sort and organize ingredients and instructions</li>
+                                        <li>Find API that provides the required data</li>
+                                        <li></li>
+                                    </ul>
+                                </ul>
                             </p>
                         </details>
 
@@ -136,7 +150,19 @@
                         <details>
                             <summary class="details-title">Challenges:</summary>
                             <p class="nes-container is-rounded glass details-text">
-                                Blah, blah, blah
+                                The first API used only retured the recipe and ingredients, but no instructions.
+                                <br>
+                                The recipe in current use makes liberal use of Optionals and Nested JSON properties.
+                                This slowed development down significantly.
+                                <br>
+                                With every object property being Optional, checks are spread through out, including a dedicated
+                                object model that only contained a static function to parse the network call results into a [String: String] Dictionary.
+                                This had the added benefit of not having to convert data types into Unwrapped Strings, which again, would require unwrapping of 
+                                Optionals.
+                                <br>
+                                As for the Nested JSON properties, the first approach involved the strict heirachy that is an exact match for the network results.
+                                This was followed by CodingKey Pattern, where all properties, including nested properties were defined withing the original model, 
+                                and immediately followed with an Enumuration that conforms to the CodingKey protocol.
                             </p>
                         </details>
                     </div>
@@ -171,7 +197,7 @@
                         <!-- Desired Features -->
                         <details>
                             <summary class="details-title">Features:</summary>
-                            <ul class="nes-container is-rounded glass details-text">
+                            <ul class="nes-container is-rounded glass details-text work-details">
                                 <li>View All Ghibli Films</li>
                                 <li>Option To Sort By Title</li>
                                 <li>Option To Sort By Release Date</li>
@@ -199,8 +225,10 @@
 
                 </article>
                 <article class="content-image">
-                    <img src="pics/Ghibli/Launch.jpg" alt="" class="nes-container is-rounded app-image">
-                    <img src="pics/Ghibli/List.jpg" alt="" class="nes-container is-rounded app-image">
+                    <img src="pics/Ghibli/Launch.jpg" alt="Screenshot showing Studio Ghibli Logo" 
+                        class="nes-container is-rounded app-image">
+                    <img src="pics/Ghibli/List.jpg" alt="Screenshot showing a table list of Studio Ghibli films" 
+                        class="nes-container is-rounded app-image">
                     <img src="pics/Ghibli/Details.jpg" alt="" class="nes-container is-rounded app-image">
 
                 </article>
@@ -260,7 +288,7 @@
 
 
     <!-- WORK SECTION  -->
-    <section class="" id="work" style="margin-bottom: 4rem;">
+    <section class="work-section" id="work" style="margin-bottom: 4rem;">
         <h2 class="section-title">Work History</h2>
         <div class="content-section">
             <article class="nes-container is-rounded with-title verbage glass">
@@ -318,7 +346,12 @@
                             <li>Rest API</li>
                             <li>Agile Methodology</li>
                         </ul>
-
+                        <hr class="divider">
+                        <li>General Skills</li>
+                        <ul class="work-details">
+                            <li>Useless Trivia</li>
+                            <li>Cooking</li>
+                        </ul>
                     </ul>
                 </div>
             </article>
@@ -331,27 +364,30 @@
         <div class="content-section">
             <article class="nes-container is-rounded with-title verbage glass">
                 <h3 class="article-title title">Background</h3>
-                <p class="verbage-text">
-                    Bacon ipsum dolor amet pork belly rump boudin, ham shankle sausage cupim short ribs chuck
-                    frankfurter
-                    spare ribs pastrami corned beef turkey. Ground round porchetta spare ribs hamburger drumstick flank
-                    venison pork loin. Burgdoggen prosciutto kevin sausage, pastrami cow pig jowl ham brisket landjaeger
-                    flank shankle tail. Tail chislic sirloin spare ribs flank boudin. Alcatra buffalo bresaola fatback,
-                    strip steak sirloin filet mignon ribeye doner short ribs porchetta tenderloin jerky andouille ham.
-                    Venison turkey flank, alcatra frankfurter kevin sausage ham turducken brisket salami capicola cow.
-                    Picanha ball tip kevin chuck.
+                <p class="details-text">
+                    To distill my greatest motivator into a single word: "boredom."
+                    More accurately state it, "avoiding boredom."
+                    <br>
+                    Maybe "Adversion to Stagnation" would be a better way of putting it.
+                    <br>
+                    I take great pleasure in being challenged. Be it mentally, politically, spiritually or
+                    any aspect of what I feel defines me. While Hegal's view of Thesis conflicting with Antithesis
+                    to produce a Synthesis and resulting in a new dominant Thesis seems to have vanished in the
+                    realm of policical discourse, I still hold that model to be true when discussing personal growth.
                 </p>
             </article>
             <article class="nes-container is-rounded with-title verbage glass">
                 <h3 class="article-title title">General Interests</h3>
-                <ul class="">
-                    <li>Religious & Secular History of Roman Empire</li>
-                    <li>History and Development of Western Music</li>
+                <ul class="work-details">
+                    <li>History & Development of Monotheistic Traditions in the Western Hemisphere</li>
+                    <li>History of Rome: From Romulus - Justinian I</li>
+                    <li>History & Development of Western Music</li>
+                    <li>Chili, Fried Chicken, Milanesa y Jamon Torta</li>
+                    <li>Mutli-instrumentalst: Guitar, Bass, Banjo, Mandolin</li>
                 </ul>
             </article>
         </div>
     </section>
-
 
     <!-- CONTACT -->
     <section class="footer" id="contact">
@@ -366,9 +402,7 @@
             <a href="https://www.linkedin.com/in/logan-melton-7924021b5/" target="_blank">
                 <i class="nes-icon linkedin is-large"></i>
             </a>
-
         </div>
-
     </section>
 </body>
 
