@@ -80,6 +80,10 @@ h4 {
     color: var(--text-color);
 }
 
+a:hover, button:hover, details:hover {
+    cursor: url("/pics/cursor.png");
+}
+
 li {
     list-style-type: none;
 }
@@ -163,7 +167,7 @@ li {
     text-align: center;
     font-size: 1.75rem;
     color: white;
-    /* margin-top: 1.5rem; */
+    text-shadow: 0px 0px 8px #000000;
 }
 
 
@@ -225,6 +229,7 @@ li {
     text-indent: 0.5rem;
     text-align: start;
     margin-bottom: 1rem;
+    font-size: 0.9rem;
 }
 
 .content-list > li {
@@ -249,10 +254,12 @@ li {
     color: var(--text-color);
     box-shadow: none;
     width: fit-content;
+    box-shadow: 0px 0px 12px #000000;
+
 }
 
 
-.code-link:hover {
+.code-link > a:hover {
     color: white;
 }
 
@@ -276,6 +283,8 @@ li {
     height: 24vw;
     padding: 0;
     margin: 0 1rem;
+    box-shadow: 0px 0px 12px #000000;
+
 }
 
 .divider {
@@ -286,9 +295,6 @@ li {
 /**** CONTACT BUTTONS ****/
 
 .footer {
-    text-align: center;
-    justify-content: center;
-    justify-self: center;
     margin: 0 auto;
 }
 
@@ -299,35 +305,21 @@ li {
 }
 
 .contact-links {
-    background-color: yellow;
     justify-content: space-evenly;
     display: flex;
-    margin: auto;
     margin: 1.5rem auto;
     padding: 0 2rem 0 3rem;
+}
+.icon-container {
+    padding: 0;
 }
 
 .social-icon {
     display: flex;
-    height: 4rem;
+    margin: 0;
     padding: 0;
 }
 
-.nes-container .social-icon {
-    padding: 0;
-}
-
-#twitter {
-    background-color: rgb(77, 152, 247);
-}
-
-#linkedin {
-    background-color: rgb(57, 130, 189);
-}
-
-#github {
-    background-color: #000;
-}
 
 /**** GENERAL ****/
 .glass {
@@ -335,4 +327,130 @@ li {
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 21px );
     -webkit-backdrop-filter: blur( 11px );
+    box-shadow: 0px 0px 12px #000000;
+
+}
+
+/**** MOBILE ****/
+
+@media screen and (max-width: 500px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    html {
+        display: block;
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.25rem;
+    }
+    
+    .hero {
+        display: block;
+        justify-content: center;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .top-nav {
+        display: none;
+    }
+
+    .section-title {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .content-section {
+        display: block;
+        width: 100%;
+    }
+
+    .verbage {
+        display: block;
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .verbage-text {
+        margin-top: 1rem;
+    }
+
+    .article-subtitle {
+        display: block;
+        text-align: center;
+        margin: 0;
+        width: 100%;
+    }
+
+    .code-link {
+        margin: 0 auto;
+    }
+
+
+    .content-image {
+        margin-top: 2rem;
+        display: block;
+        width: auto;
+        text-align: center;
+    }
+
+    .content-image > .nes-container {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+
+    .app-image {
+        display: inline-block;
+        height: 20rem;
+        width: 10rem;
+        object-fit: contain;
+        background-color: red;
+        margin-top: 1rem;
+    }
+
+    .content-section > .verbage {
+        margin-bottom: 2rem;
+    }
+
+    .footer {
+        width: auto;
+    }
+
+    #contact {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .icon-list {
+        width: 100%;
+        margin: 0;
+    }
+
+    .social-icon {
+        display: inline-block;
+        margin: 0 1rem;
+    }
+
+    .contact-links {
+        display: flex;
+        margin: 0 10rem;
+        box-shadow: 0px 0px 12px #000000;
+
+    }
+
+
+
 }
