@@ -232,6 +232,8 @@ li {
     font-size: 0.9rem;
 }
 
+
+
 .content-list > li {
     list-style-type: none;
     margin: 0.125rem 0;
@@ -391,6 +393,10 @@ li {
         text-align: center;
         margin: 0;
         width: 100%;
+    }
+
+    .details-title {
+        line-height: 2rem;
     }
 
     .code-link {
