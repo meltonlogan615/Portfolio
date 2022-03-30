@@ -12,6 +12,7 @@
     <link rel="icon" href="pics/favicon-32x32.png" type="image/x-icon">
     <link rel="icon" href="pics/favicon-16x16.png" type="image/x-icon">
     <link rel="icon" href="pics/android-chrome-144x144.png" type="image/x-icon">
+    <script src="imageZoom.js"></script>
 </head>
 
 <body>
@@ -50,7 +51,7 @@
                         <details>
                             <summary class="details-title">Scope:</summary>
                             <p class="nes-container is-rounded glass details-text">
-                                Create an app that shows "Flrodia Man" articles for the current
+                                Create an app that shows "Florida Man" articles for the current
                                 date in previous years.
                             </p>
                         </details class="lists">
@@ -69,7 +70,7 @@
                                 This project was pretty cut and dry. Once the API was in place, the build was pretty
                                 intuitive.
                                 <br>
-                                Custom UITableViewCells were used rather than default configurations.
+                                Custom Table View Cells were used rather than default configurations.
                                 Unfortunately, Apple's API for UIDatePicker does not allow for only Month and Date
                                 selections.
                                 Can be futher iterated upon and provide a cleaner UX.
@@ -98,12 +99,12 @@
                 </article>
                 <article class="content-image">
                     <img src="pics/FM/Launch.jpg" alt="Screenshot of Florida Man Launch Screen"
-                        class="nes-container is-rounded app-image">
+                        class="nes-container is-rounded app-image" id="FM-Launch">
                     <img src="pics/FM/List.jpg" alt="Screenshot of table listing Florida Man news articles for March 15"
-                        class="app-image nes-container is-rounded">
+                        class="app-image nes-container is-rounded" id="FM-List">
                     <img src="pics/FM/Search.jpg"
                         alt="Screenshot of date picker to select a date to return Flrodia Man news articles"
-                        class="app-image nes-container is-rounded">
+                        class="app-image nes-container is-rounded" id="FM-Search">
                 </article>
             </div>
         </div>
@@ -151,7 +152,7 @@
                                 <hr class="divider">
                                 <li>Phase 2</li>
                                 <ul class="work-details">
-                                    <li>Build custom UITableViewCells to ensure correct layout</li>
+                                    <li>Build custom Table View Cells to ensure correct layout</li>
                                     <li>Reduce heirachtical complexity into a flattened response</li>
                                 </ul>
 
@@ -190,9 +191,12 @@
                     </a>
                 </article>
                 <article class="content-image">
-                    <img src="pics/Staged/Staged-Search.jpg" alt="" class="nes-container is-rounded app-image">
-                    <img src="pics/Staged/Staged-List.jpg" alt="" class="nes-container is-rounded app-image">
-                    <img src="pics/Staged/Staged-Recipe.jpg" alt="" class="nes-container is-rounded app-image">
+                    <img src="pics/Staged/Staged-Search.jpg" alt="" 
+                        class="nes-container is-rounded app-image" id="Staged-Search">
+                    <img src="pics/Staged/Staged-List.jpg" alt="" 
+                        class="nes-container is-rounded app-image" id="Staged-List">
+                    <img src="pics/Staged/Staged-Recipe.jpg" alt="" 
+                        class="nes-container is-rounded app-image" id="Staged-Recipe">
 
                 </article>
             </div>
@@ -253,11 +257,11 @@
                 </article>
                 <article class="content-image">
                     <img src="pics/Ghibli/Launch.jpg" alt="Screenshot showing Studio Ghibli Logo"
-                        class="nes-container is-rounded app-image">
+                        class="nes-container is-rounded app-image" id="Ghib-Launch">
                     <img src="pics/Ghibli/List.jpg" alt="Screenshot showing a table list of Studio Ghibli films"
-                        class="nes-container is-rounded app-image">
+                        class="nes-container is-rounded app-image" id="Ghib-List">
                     <img src="pics/Ghibli/Details.jpg" alt="Screenshot showing details of Castle in the Sky"
-                        class="nes-container is-rounded app-image">
+                        class="nes-container is-rounded app-image" id="Ghib-Details">
 
                 </article>
             </div>
@@ -338,9 +342,12 @@
 
                 </article>
                 <article class="content-image">
-                    <img src="pics/Snake/Snake-Start.jpg" alt="" class="nes-container is-rounded app-image">
-                    <img src="pics/Snake/Snake-GamePlay.jpg" alt="" class="nes-container is-rounded app-image">
-                    <img src="pics/Snake/Snake-GameOver.jpg" alt="" class="nes-container is-rounded app-image">
+                    <img src="pics/Snake/Snake-Start.jpg" alt="" 
+                        class="nes-container is-rounded app-image" id="myImg">
+                    <img src="pics/Snake/Snake-GamePlay.jpg" alt="" 
+                        class="nes-container is-rounded app-image" id="Snake-GamePlay">
+                    <img src="pics/Snake/Snake-GameOver.jpg" alt="" 
+                        class="nes-container is-rounded app-image" id="Snake-GameOver">
 
                 </article>
             </div>
@@ -395,7 +402,7 @@
                             <li>Swift</li>
                             <li>UIKit - Foundation</li>
                             <li>SpriteKit / SceneKit</li>
-                            <li>MuiscKit</li>
+                            <li>MusicKit</li>
                         </ul>
                         <hr class="divider">
                         <li>Web Development</li>
@@ -467,6 +474,36 @@
             </a>
         </div>
     </section>
+    
+     <!-- MODAL FOR IMAGES  -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    <div id="caption"></div>
+  </div>
+
+  <script>
+        // Get the modal
+  var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function () {
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function () {
+  modal.style.display = "none";
+}
+  </script>
 </body>
 
 </html>
