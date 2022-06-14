@@ -170,7 +170,7 @@
                             <p class="nes-container is-rounded glass details-text">
                                 The first API used only retured the recipe and ingredients, but no instructions.
                                 <br>
-                                The recipe in current use makes liberal use of Optionals and Nested JSON properties.
+                                The API in current use makes liberal use of Optionals and Nested JSON properties.
                                 This slowed development down significantly.
                                 <br>
                                 With every object property being Optional, checks are spread through out, including a
@@ -186,12 +186,20 @@
                                 This was followed by CodingKey Pattern, where all properties, including nested
                                 properties were defined withing the original model,
                                 and immediately followed with an Enumuration that conforms to the CodingKey protocol.
+                                <br>
+                                However, that was not ideal either. Once the models were restructured again into a strict heirachy, but with liberal
+                                use of generics, then we were able to proceed.
                             </p>
                         </details>
                     </div>
-                    <a href="https://github.com/meltonlogan615/StagedCooking-II" target="blank_">
+                    <a href="https://github.com/meltonlogan615/StagedRevisited" target="blank_">
                         <button type="button" class="nes-btn is-primary code-link">
                             View on GitHub
+                        </button>
+                    </a>
+                    <a href="" target="blank_">
+                        <button type="button" class="nes-btn is-disabled code-link">
+                            Currently in Early Beta.
                         </button>
                     </a>
                 </article>
