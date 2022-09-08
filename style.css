@@ -519,3 +519,21 @@ li {
 
     }
 }
+
+/* LEGAL VERBAGE */
+
+.terms {
+    width: 85vw;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+}
+
+.legal-verbage {
+    width: fit-content;
+    margin-bottom: 0;
+}
+
+.legal-verbage > .lists  {
+    list-style-position: inside;
+    list-style-image: url(pics/listItem.png)
+} 

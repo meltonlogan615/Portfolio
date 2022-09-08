@@ -187,7 +187,8 @@
                                 properties were defined withing the original model,
                                 and immediately followed with an Enumuration that conforms to the CodingKey protocol.
                                 <br>
-                                However, that was not ideal either. Once the models were restructured again into a strict heirachy, but with liberal
+                                However, that was not ideal either. Once the models were restructured again into a
+                                strict heirachy, but with liberal
                                 use of generics, then we were able to proceed.
                             </p>
                         </details>
@@ -204,12 +205,12 @@
                     </a>
                 </article>
                 <article class="content-image">
-                    <img src="pics/Staged/Staged-Search.jpg" alt="" 
-                        class="nes-container is-rounded app-image" id="Staged-Search">
-                    <img src="pics/Staged/Staged-List.jpg" alt="" 
-                        class="nes-container is-rounded app-image" id="Staged-List">
-                    <img src="pics/Staged/Staged-Recipe.jpg" alt="" 
-                        class="nes-container is-rounded app-image" id="Staged-Recipe">
+                    <img src="pics/Staged/Staged-Search.jpg" alt="" class="nes-container is-rounded app-image"
+                        id="Staged-Search">
+                    <img src="pics/Staged/Staged-List.jpg" alt="" class="nes-container is-rounded app-image"
+                        id="Staged-List">
+                    <img src="pics/Staged/Staged-Recipe.jpg" alt="" class="nes-container is-rounded app-image"
+                        id="Staged-Recipe">
 
                 </article>
             </div>
@@ -266,7 +267,7 @@
                             View on GitHub
                         </button>
                     </a>
- 
+
                 </article>
                 <article class="content-image">
                     <img src="pics/Ghibli/Launch.jpg" alt="Screenshot showing Studio Ghibli Logo"
@@ -355,12 +356,11 @@
 
                 </article>
                 <article class="content-image">
-                    <img src="pics/Snake/Snake-Start.jpg" alt="" 
-                        class="nes-container is-rounded app-image" id="myImg">
-                    <img src="pics/Snake/Snake-GamePlay.jpg" alt="" 
-                        class="nes-container is-rounded app-image" id="Snake-GamePlay">
-                    <img src="pics/Snake/Snake-GameOver.jpg" alt="" 
-                        class="nes-container is-rounded app-image" id="Snake-GameOver">
+                    <img src="pics/Snake/Snake-Start.jpg" alt="" class="nes-container is-rounded app-image" id="myImg">
+                    <img src="pics/Snake/Snake-GamePlay.jpg" alt="" class="nes-container is-rounded app-image"
+                        id="Snake-GamePlay">
+                    <img src="pics/Snake/Snake-GameOver.jpg" alt="" class="nes-container is-rounded app-image"
+                        id="Snake-GameOver">
 
                 </article>
             </div>
@@ -487,36 +487,16 @@
             </a>
         </div>
     </section>
-    
-     <!-- MODAL FOR IMAGES  -->
+
+    <!-- MODAL FOR IMAGES  -->
     <div id="myModal" class="modal">
         <span class="close">&times;</span>
         <img class="modal-content" id="img01">
-    <div id="caption"></div>
-  </div>
+        <div id="caption"></div>
+    </div>
 
-  <script>
-        // Get the modal
-  var modal = document.getElementById("myModal");
+    modalImg = document.getElementById("img01");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImg");
-var modalImg = document.getElementById("img01");
-var captionText = document.getElementById("caption");
-img.onclick = function () {
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function () {
-  modal.style.display = "none";
-}
-  </script>
 </body>
 
 </html>
