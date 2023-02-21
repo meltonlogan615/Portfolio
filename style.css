@@ -1,7 +1,7 @@
 :root {
     --headline-color: #1f1f1f;
     --text-color: #333;
-    --subtitle-color: #424242
+    --subtitle-color: #424242;
 }
 
 @font-face {
@@ -9,7 +9,7 @@
     src: url(PressStart2P-Regular.ttf);
 }
 
-*{
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
@@ -38,7 +38,7 @@ header {
     margin-bottom: 2rem;
 }
 
-details > summary {
+details>summary {
     outline: none;
     list-style-image: url(pics/listItem.png);
 }
@@ -47,13 +47,16 @@ article {
     margin-bottom: 2rem;
 }
 
-section > .container {
+section>.container {
     margin-bottom: 10rem;
 }
 
-h1, h2, h3, h4 {            
+h1,
+h2,
+h3,
+h4 {
     font-weight: 400;
-    color: var(--headline-color)
+    color: var(--headline-color);
 }
 
 h1 {
@@ -73,14 +76,16 @@ h4 {
 }
 
 * a {
-    color: var(--text-color)
+    color: var(--text-color);
 }
 
 * a:visited {
     color: var(--text-color);
 }
 
-a:hover, button:hover, details:hover {
+a:hover,
+button:hover,
+details:hover {
     cursor: url("/pics/cursor.png");
 }
 
@@ -91,14 +96,13 @@ li {
 .hero {
     display: flex;
     justify-content: center;
-} 
+}
 
-
-.hero > .nes-container {
+.hero>.nes-container {
     margin: 0 auto;
 }
 
-.hero > img {
+.hero>img {
     height: 12rem;
     width: 12rem;
 }
@@ -185,7 +189,7 @@ li {
 
 .verbage {
     display: inline-block;
-    width: 40%; 
+    width: 40%;
     text-align: start;
     margin-left: -4rem;
 }
@@ -198,6 +202,7 @@ li {
     width: auto;
     margin: 1rem 1rem 0 1rem;
 }
+
 .article-subtitle {
     display: flex;
     font-weight: 400;
@@ -216,7 +221,6 @@ li {
     font-size: 1.125rem;
 }
 
-
 .feature-list {
     margin-top: 10rem;
 }
@@ -229,7 +233,7 @@ li {
     font-size: 0.9rem;
 }
 
-.content-list > li {
+.content-list>li {
     list-style-type: none;
     margin: 0.125rem 0;
 }
@@ -252,10 +256,9 @@ li {
     box-shadow: none;
     width: fit-content;
     box-shadow: 0px 0px 12px #000000;
-
 }
 
-.code-link > a:hover {
+.code-link>a:hover {
     color: white;
 }
 
@@ -267,20 +270,19 @@ li {
     width: 40%;
 }
 
-.content-image > .nes-container {
+.content-image>.nes-container {
     margin: 0 1rem;
     padding: 0;
     background-color: #000;
 }
-
 
 .app-image {
     display: flex;
     height: 24vw;
     padding: 0;
     margin: 0 1rem;
+    max-width: fit-content;
     box-shadow: 0px 0px 12px #000000;
-
 }
 
 .divider {
@@ -305,6 +307,7 @@ li {
     margin: 1.5rem auto;
     padding: 0 2rem 0 3rem;
 }
+
 .icon-container {
     padding: 0;
 }
@@ -315,44 +318,50 @@ li {
     padding: 0;
 }
 
-
 /**** GENERAL ****/
 .glass {
     background: rgba(255, 255, 255, 0.664);
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
-    backdrop-filter: blur( 21px );
-    -webkit-backdrop-filter: blur( 11px );
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(21px);
+    -webkit-backdrop-filter: blur(11px);
     box-shadow: 0px 0px 12px #000000;
-
 }
-
 
 /**** IMAGE MODAL ****/
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-  }
-  
-  /* Modal Content (image) */
-  .modal-content {
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9);
+    /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
     margin: auto;
     display: block;
     height: 80%;
     max-height: 700px;
 }
-  
-  /* Caption of Modal Image */
-  #caption {
+
+/* Caption of Modal Image */
+#caption {
     margin: auto;
     display: block;
     width: 80%;
@@ -361,27 +370,37 @@ li {
     color: #ccc;
     padding: 10px 0;
     height: 150px;
-  }
-  
-  /* Add Animation */
-  .modal-content, #caption {  
+}
+
+/* Add Animation */
+.modal-content,
+#caption {
     -webkit-animation-name: zoom;
     -webkit-animation-duration: 0.6s;
     animation-name: zoom;
     animation-duration: 0.6s;
-  }
-  
-  @-webkit-keyframes zoom {
-    from {-webkit-transform:scale(0)} 
-    to {-webkit-transform:scale(1)}
-  }
-  
-  @keyframes zoom {
-    from {transform:scale(0)} 
-    to {transform:scale(1)}
-  }
-  
-  
+}
+
+@-webkit-keyframes zoom {
+    from {
+        -webkit-transform: scale(0);
+    }
+
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes zoom {
+    from {
+        transform: scale(0);
+    }
+
+    to {
+        transform: scale(1);
+    }
+}
+
 .close {
     position: absolute;
     top: 15px;
@@ -390,13 +409,13 @@ li {
     font-size: 40px;
     font-weight: bold;
     transition: 0.3s;
-  } 
+}
 
-@media only screen and (max-width: 700px){
+@media only screen and (max-width: 700px) {
     .modal-content {
-      width: 100%;
+        width: 100%;
     }
-  }
+}
 
 /**** MOBILE ****/
 
@@ -418,7 +437,7 @@ li {
     h2 {
         font-size: 1.25rem;
     }
-    
+
     .hero {
         display: block;
         justify-content: center;
@@ -475,7 +494,7 @@ li {
         text-align: center;
     }
 
-    .content-image > .nes-container {
+    .content-image>.nes-container {
         margin-top: 0.5rem;
         margin-bottom: 0.5rem;
     }
@@ -489,7 +508,7 @@ li {
         margin-top: 1rem;
     }
 
-    .content-section > .verbage {
+    .content-section>.verbage {
         margin-bottom: 2rem;
     }
 
@@ -516,7 +535,6 @@ li {
         display: flex;
         margin: 0 10rem;
         box-shadow: 0px 0px 12px #000000;
-
     }
 }
 
@@ -533,7 +551,115 @@ li {
     margin-bottom: 0;
 }
 
-.legal-verbage > .lists  {
+.legal-verbage>.lists {
     list-style-position: inside;
-    list-style-image: url(pics/listItem.png)
-} 
+    list-style-image: url(pics/listItem.png);
+}
+
+/* BLOG STUFF */
+
+.blog-body {
+    line-height: 1.25;
+}
+
+.blog-body > .glass {
+    background: rgba(255, 255, 255, 0.85);
+}
+
+.blog-text {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: large;
+    margin-bottom: 2rem;
+    min-width: 40vw;
+    display: flexbox;
+}
+
+.example-group {
+    display: flex;
+    max-width: 100%;
+    overflow: auto;
+    overflow-wrap: normal;
+    margin-bottom: 2rem;
+}
+
+.example {
+    margin: 0 2rem;
+}
+
+.article-subtitle {
+    font-family: player2;
+}
+
+.blog-text > p {
+    margin: 1rem auto;
+    width: 100%;
+}
+
+.blog-code {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: 600;
+    padding: 0 0.25rem;
+    background-color: whitesmoke;
+    width: fit-content;
+    text-align: center;
+    margin: auto
+}
+
+.blog-footnote {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    text-align: justify;
+    line-height: 1rem;
+}
+
+.blog-noImage {
+    width: 70%;
+}
+
+.blog-images {
+    display: flex;
+    background-color: white;
+}
+
+.blog-image {
+    /* display: block; */
+    margin: 0 2rem;
+    padding: 0;
+    max-height: 24vw;
+    max-width: fit-content;
+    box-shadow: 0px 0px 12px #000000;
+}
+
+.blog-snippet {
+    background-color: rgba(246, 246, 246, 1.0);
+    margin-top: 50rem;
+}
+
+.label-image-stack {
+    display: block;
+    text-align: center;
+}
+
+p:has(> .blog-image) {
+    text-align: center;
+    justify-items: center;
+    width: fit-content;
+    margin: 0 auto 2rem auto;
+}
+
+.content-image>.single-image {
+    margin: auto;
+    margin-bottom: 2rem;
+}
+
+.blog-link {
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: underline;
+}
+
+.blog-quote {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0 1rem;
+}
+

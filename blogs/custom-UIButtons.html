@@ -1,0 +1,517 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../nes.min.css">
+  <link rel="stylesheet" href="../style.css">
+  <title>Logan on...</title>
+  <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="pics/apple-touch-icon.png" type="image/x-icon">
+  <link rel="icon" href="pics/favicon-32x32.png" type="image/x-icon">
+  <link rel="icon" href="pics/favicon-16x16.png" type="image/x-icon">
+  <link rel="icon" href="pics/android-chrome-144x144.png" type="image/x-icon">
+</head>
+
+<body>
+  <!-- NAVIGATION BAR -->
+  <header>
+    <div class="hero">
+      <div class="nes-container is-rounded hero-text glass" style="margin-bottom: 4rem;">
+        <h1 class="page-title">Logan Melton</h1>
+        <div class="page-subtitle">iOS Developer</div>
+      </div>
+      <img src="../pics/profile.png" alt="Picture of Logan" class="nes-container is-rounded profile-image glass">
+    </div>
+    <nav class="top-nav nes-container is-rounded glass">
+      <ul>
+        <li class="nav-item"><a href="../index.html">Home</a></li>
+        <li class="nav-item"><a href="../index.html#apps">App Development</a></li>
+        <!-- <li class="nav-item"><a href="#web">Web Development</a></li> -->
+        <li class="nav-item"><a href="../index.html#work">Work</a></li>
+        <li class="nav-item"><a href="../index.html#personal">Personal</a></a></li>
+        <li class="nav-item"><a href="../index.html#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="blog-body" style="margin-bottom: 4rem;" id="apps">
+    <h2 class="section-title">LET ME HIT THAT!</h2>
+    <!-- SECTION VERBAGE -->
+
+    <!-- I Like Buttons -->
+    <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+      <p class="title">I Like Buttons</p>
+
+      <div class="content-section">
+        <article class="verbage">
+          <div class="blog-text">
+            <p>I like buttons, and switches, and levers, and knobs that turn or click
+              (especially the ones that pop out). And don't get me started on pull-cords.</p>
+
+            <p>But sometimes, buttons bore me. Sometimes, buttons frustrate me. I keep pressing the damned thing and
+              nothing happens. Or I cannot for the life of me figure out where the button I need to boop* is so I can
+              continue doing whatever it was when my precious turned on me and left.</p>
+          </div>
+
+          <div class="blog-footnote">
+            <p>*I will use the device agnostic term "boop". Mobile devices get tapped, PCs get clicked. "Boop"
+              effectively
+              conveys the meaning without increasing ambiguity. Even though I will be discussing UIButtons that commonly
+              displayed in either iOS or iPadOS apps, I'm still going to use the term "boop" because it makes me happy.
+            </p>
+            <p>
+              If you want to download the completed project, <a href="https://github.com/meltonlogan615/ArticlesCode"
+                target="_blank" class="blog-link">Download ButtonFun from
+                Github</a>.
+            </p>
+          </div>
+        </article>
+
+        <!-- SECTION IMAGES -->
+        <article class="blog-images">
+          <img src="blog-pics/baby-plucky.gif"
+            alt="A young Plucky Duck scolds his mother for her cold hearted attempt at pressing an elevator button. Only Plucky can push the button."
+            class="nes-container is-rounded app-image" id="">
+        </article>
+      </div>
+    </div>
+
+    <!-- Dont' Be Boring -->
+    <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+      <p class="title">Don't Be Boring</p>
+
+      <div class="content-section">
+        <article class="verbage">
+          <div class="blog-text">
+            <p>UIKit gives us a few defaults right out of the gate.</p>
+            <p>I don't want to get into most of these. It's what pretty obvious what each of them are used for.
+            </p>
+            <p>What I want talk about is that "Custom Button".</p>
+            <p><span class="blog-code">UIButton(type: .custom)</span></p>
+            <p>But before we belly up on this, I want to remind you that <span class="blog-code">UIButton</span>'s are a
+              subclass of <span class="blog-code">UIControl</span>, which is a subclass of <span
+                class="blog-code">UIView</span>.</p>
+            <p>Which means that <span class="blog-code">UIButton</span>s can be used in ways similar to <span
+                class="blog-code">UIView</span>s. This allows us to create buttons in different ways so the code isn't
+              boring for us and it won't be boring for the user to see and use.</p>
+          </div>
+        </article>
+
+        <!-- Screen Shots and Other images go here-->
+        <article class="blog-images">
+          <img src="blog-pics/allButtons.png" alt="" class="nes-container is-rounded app-image" id="" alt="">
+          <img src="blog-pics/buttonsCloseUp.png" alt="" class="nes-container is-rounded app-image" id="" alt="">
+        </article>
+      </div>
+    </div>
+
+    <!-- Defining a Custom Button -->
+    <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+      <p class="title">Defining A Custom Button</p>
+      <div class="content-section">
+        <article class="verbage blog-noImage">
+          <div class="blog-text">
+            <p>It's actually pretty easy.</p>
+            <div class="nes-container is-rounded blog-snippet">
+              <script src="https://gist.github.com/meltonlogan615/e3379075b370c2577048ff51d7280564.js"></script>
+            </div>
+            <p>BOOM! Did you see that or did I go too fast?</p>
+            <p>Here it is again:</p>
+            <div class="nes-container is-rounded blog-snippet">
+              <script src="https://gist.github.com/meltonlogan615/e3379075b370c2577048ff51d7280564.js"></script>
+            </div>
+            <p class="article-subtitle">REKT!</p>
+            <p>Except for one little issue. That line doesn't do what we would expect on it's lonesome like that.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+
+    <!-- How to Fail Properly -->
+    <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+      <p class="title">How To Fail Properly</p>
+      <div class="content-section">
+        <article class="verbage">
+          <div class="blog-text">
+            <p>This code will not display anything in the view.</p>
+            <div class="nes-container is-rounded blog-snippet">
+              <script src="https://gist.github.com/meltonlogan615/24e07c19e7dc16447962eeae68dd9986.js"></script>
+            </div>
+            <p>This one will.</p>
+            <div class="nes-container is-rounded blog-snippet">
+              <script src="https://gist.github.com/meltonlogan615/400d37ffef5b6d430a5503501bdd2a28.js"></script>
+            </div>
+            <p>Now for the question, "what did I do wrong?"</p>
+            <p>And as with most things, the answer is somwhere between "nothing" and "everything".</p>
+          </div>
+        </article>
+
+        <!-- Screen Shots and Other images go here-->
+        <article class="verbage">
+          <div class="content-section">
+            <div class="label-image-stack">
+              <p>Custom Button</p>
+              <p class="blog-images">
+                <img src="blog-pics/customButtonVC.png" alt="" class="nes-container is-rounded app-image" id="" alt="">
+              </p>
+            </div>
+            <div class="label-image-stack">
+              <p>System Button</p>
+              <p class="blog-images">
+                <img src="blog-pics/systemButtonVC.png" alt="" class="nes-container is-rounded app-image single-image"
+                  id="" alt="">
+              </p>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Why System Button Works -->
+    <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+      <p class="title">Why The System Button Works</p>
+      <div class="content-section">
+        <article class="verbage blog-noImage">
+          <div class="blog-text">
+            <p>To understand why
+              <span class="blog-code">.custom</span> doesn't work when
+              <span class="blog-code">.system</span> does, we need to take a quick look at the documentation (groan).
+            </p>
+            <p>Hidden deep in the <a href="https://developer.apple.com/documentation/uikit/uibutton/1624028-init
+              " target="_blank" class="blog-link">
+                Creating buttons of a specific type</a> subheading is the answer:
+            </p>
+            <p>
+            <blockquote class="blog-quote">
+              When creating a custom button — a button with the type UIButton.ButtonType.custom — <em>the frame of the
+                button is set to (0, 0, 0, 0) initially</em>*. Before adding the button to your interface, you should
+              update the
+              frame to a more appropriate value.
+            </blockquote>
+            </p>
+            <p>
+              There we have it. Both the X & Y positions are 0, which is fine. It's up there hanging out with the time.
+              The problem is that both the <span class="blog-code">width:</span> & <span
+                class="blog-code">height:</span> properties are also set to 0.
+            </p>
+            <p>
+              This is opposed to <span class="blog-code">UIButton(type: .system)</span> which has an intrinsic width
+              and heigth based on the value of the <span class="blog-code">.setTitle(_ title: String?, for:
+                UIControl.State)</span> as well some as default values set for other properties.
+            </p>
+          </div>
+
+
+        </article>
+      </div>
+    </div>
+
+    <!-- How to Create A Custom Button -->
+    <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+      <p class="title">How to Create A Custom UIButton</p>
+      <div class="content-section">
+        <article class="verbage blog-noImage">
+          <div class="blog-text">
+            <p>If you've already downloaded the source code for this, I'll be doing everything in the <span
+                class="blog-code">Views > CustomButton.swift</span> file. If you haven't yet or want to <a href=""
+                target="_blank" class="blog-link">you can do so here</a>.
+            </p>
+            <p>We could do all of this within a ViewController, but that can get messy real quick. And if you wanted to
+              use it elsewhere in your project, you'd be <abbr title="Shit Out of Luck">SOL</abbr> and have to keep
+              having to copy and paste them around and chaos would ensue. Human sacrifice! Dogs and cats living
+              together! Mass hysteria!
+            </p>
+            <p>
+              Rather, let's make it once and then create new instances that joker as it's needed. Here's the basics of
+              what we need.
+            </p>
+            <div class="nes-container is-rounded blog-snippet">
+              <script src="https://gist.github.com/meltonlogan615/d03281c9fa4ffb818a4df2b80a70ff53.js"></script>
+            </div>
+            <p>
+              That's enough to get us started. It still doesn't show us anything, but it does give our button a
+              frame.*
+            </p>
+          </div>
+          <div class="blog-footnote">
+            <p>If you are working out of the project that I created, if you run the project as is, then boop into the
+              space where "Custom Button" should be, it'll work as we'd expect.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- In The Before Times -->
+    <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+      <p class="title">In The Before Times...</p>
+      <div class="content-section">
+        <article class="verbage blog-noImage">
+          <div class="blog-text">
+            <p>
+              Prior to iOS 15, you would set the button's properties directly.
+            </p>
+            <p>
+              If you did something like this:
+            </p>
+            <div class="nes-container is-rounded blog-snippet">
+              <script src="https://gist.github.com/meltonlogan615/efe248aac7e4eff05fb2c375bd0eb952.js"></script>
+            </div>
+            <p>
+              You get something like this:
+            </p>
+            <p class="blog-images">
+              <img src="blog-pics/customButtonOld2.png" class="nes-container is-rounded blog-image" id="" alt="">
+            </p>
+            <p>
+              If you plug this into Xcode, you'll get a warning on line 3 (<span
+                class="blog-code">customButton.contentEdgeInsets = UIEdgeInsets(top: 10, left: 20, bottom: 10, right:
+                20)</span>)
+            </p>
+            <p class="blog-images">
+              <img src="blog-pics/contentEdgeInsetWarning.png" class="nes-container is-rounded blog-image" id=""
+                alt="Xcode Warning: 'contentEdgeInsets' was deprecated in iOS 15.0: This property is ignored when using UIButtonConfiguration">
+            </p>
+            <p>
+              What in the hell are we supposed to do with <span class="blog-code">UIButtonConfiguration</span>?
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- UIButtonConfiguration -->
+    <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+      <p class="title">UIButtonConfiguration</p>
+      <div class="content-section">
+        <article class="verbage blog-noImage">
+          <div class="blog-text">
+            <p>
+              The <span class="blog-code">UIButton.Configuration</span> will be the backbone for (almost) everything we
+              need going forward. And all we need to get started are two lines.
+            </p>
+            <p>
+              I try to keep my <span class="blog-code">init</span> pretty short. One of the ways I like to do that is by
+              abstracting out all of the properties that relate to appearance into a seperate method, which then gets
+              called in the <span class="blog-code">init</span>.
+            </p>
+            <div class="nes-container is-rounded blog-snippet">
+              <script src="https://gist.github.com/meltonlogan615/9fd6563083d0902895a6f97a60b97bb5.js"></script>
+            </div>
+            <p>
+              On Line 16, I create a Method that contains an Instance of <span
+                class="blog-code">UIButton.Configuration.filled()</span>. It
+              will serve as the container for all of the properties we're about to mess around with.
+            </p>
+            <p>
+              <span class="blog-code">.filled()</span> is one of several static methods available within
+              <span class="blog-code">UIButton.Configuration</span>. Each of them provide a set of default properties
+              that are consistent
+              with <a
+                href="https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/buttons#style"
+                target="_blank" class="blog-link">Apple's Human Interface Guidelines</a>.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Default Configurations -->
+    <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+      <p class="title">Default Configurations</p>
+      <div class="content-section">
+        <article class="verbage blog-noImage">
+          <div class="blog-text">
+            <p class="article-subtitle">Configurations</p>
+            <p>
+              Let's look at each of the default configurations available.
+            </p>
+            <p>
+              Quick Note: The only thing that I have defined on the <span>config</span> is the title attribute.
+            </p>
+            <div class="example-group">
+              <div class="example">
+                <p class="article-subtitle">
+                  Plain
+                <div class="blog-code">UIButton.Configuration.plain()</div>
+                </p>
+                <p class="blog-images">
+                  <img src="blog-pics/plainbutton.png" class="nes-container is-rounded blog-image" id="" alt="">
+                </p>
+              </div>
+              <div class="example">
+                <p class="article-subtitle">
+                  Gray
+                <div class="blog-code">UIButton.Configuration.gray()</div>
+                </p>
+                <p class="blog-images">
+                  <img src="blog-pics/grayButton.png" class="nes-container is-rounded blog-image" id="" alt="">
+                </p>
+              </div>
+              <div class="example">
+                <p class="article-subtitle">
+                  Tinted
+                <div class="blog-code">UIButton.Configuration.tinted()</div>
+                </p>
+                <p class="blog-images">
+                  <img src="blog-pics/tintedButton.png" class="nes-container is-rounded blog-image" id="" alt="">
+                </p>
+              </div>
+              <div class="example">
+                <p class="article-subtitle">
+                  Filled
+                <div class="blog-code">UIButton.Configuration.filled()</div>
+                </p>
+                <p class="blog-images">
+                  <img src="blog-pics/filledButton.png" class="nes-container is-rounded blog-image" id="" alt="">
+                </p>
+
+              </div>
+              <div class="example">
+                <p class="article-subtitle">
+                  Borderless
+                <div class="blog-code">UIButton.Configuration.borderless()</div>
+                </p>
+                <p class="blog-images">
+                  <img src="blog-pics/borderlessButton.png" class="nes-container is-rounded blog-image" id="" alt="">
+                </p>
+              </div>
+              <div class="example">
+                <p class="article-subtitle">
+                  Bordered
+                <div class="blog-code">UIButton.Configuration.bordered()</div>
+                </p>
+                <p class="blog-images">
+                  <img src="blog-pics/borderedButton.png" class="nes-container is-rounded blog-image" id="" alt="">
+                </p>
+              </div>
+              <div class="example">
+                <p class="article-subtitle">
+                  Bordered Tinted
+                <div class="blog-code">UIButton.Configuration.borderedTinted()</div>
+                </p>
+                <p class="blog-images">
+                  <img src="blog-pics/borderedTintedButton.png" class="nes-container is-rounded blog-image" id=""
+                    alt="">
+                </p>
+              </div>
+              <div class="example">
+                <p class="article-subtitle">
+                  Bordered Prominent
+                <div class="blog-code">UIButton.Configuration.borderedProminent()</div>
+                </p>
+                <p class="blog-images">
+                  <img src="blog-pics/BorderedProminentButton.png" class="nes-container is-rounded blog-image" id=""
+                    alt="">
+                </p>
+              </div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Sizes -->
+    <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+      <p class="title"> Sizes</p>
+      <div class="content-section">
+        <article class="verbage ">
+          <div class="blog-text">
+            <p class="article-subtitle">In Order From Top To Bottom:</p>
+            <p>Mini: <span class="blog-code">config.buttonSize = .mini</span></p>.
+            <p>Small: <span class="blog-code">config.buttonSize = .small</span></p>.
+            <p>Medium: <span class="blog-code">config.buttonSize = .medium</span></p>.
+            <p>Large: <span class="blog-code">config.buttonSize = .large</span></p>.
+          </div>
+        </article>
+
+        <!-- Screen Shots and Other images go here-->
+        <article class="verbage">
+          <div class="content-section">
+            <p class="blog-images">
+              <img src="blog-pics/sizedButtons.png" alt="" class="nes-container is-rounded app-image" id="" alt="">
+            </p>
+          </div>
+        </article>
+      </div>
+      <!-- <article class="verbage"> -->
+      <div class="content-section">
+        <article class="verbage blog-noImage">
+          <div class="blog-text">
+            <p>Again, here I've only set the configuration's <span class="blog-code">title</span> and <span
+                class="blog-code" span>buttonSize</span> properties.</p>
+            <p>The frame, text color, background color, and corner radius are all defaults for the <span
+                class="blog-code">bordered()</span>Configuration and their respective size.</p>
+            <div class="nes-container is-rounded blog-snippet">
+              <script src="https://gist.github.com/meltonlogan615/9e6033e867ddc00192ce69d7529e7f5c.js"></script>
+            </div>
+          </div>
+          <div class="blog-footnote">
+            A quick little trick that I like, if you create a code snippet and need a placeholder, use <span
+              class="blog-code">
+              <#Value#>
+            </span>.
+          </div>
+        </article>
+      </div>
+
+    </div> <!-- End of Size Section-->
+
+    <!-- Using Your Custom Button -->
+    <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+      <p class="title">Using Your Custom Button</p>
+      <div class="content-section">
+        <article class="verbage blog-noImage">
+          <div class="blog-text">
+            <p>
+              So far, with only two properties we've already come into a possible 32 different configuration
+              combinations.</p>
+            <p>To avoid getting deep into a mess, I'm gong to stick with <span
+                class="blog-code">UIButton.Configuration.bordered()</span> with a <span
+                class="blog-code">UIButton.Configuration.Size</span> of <span class="blog-code">.medium</span>.
+            </p>
+            <p>
+              If you are coding along and not using the source code for this, then you will probably want to see the
+              thing that you are building.
+            </p>
+            <p>
+              This is all that I have in my <span class="blog-code">CustomButtonViewController</span>:
+            </p>
+            <div class="nes-container is-rounded blog-snippet">
+              <script src="https://gist.github.com/meltonlogan615/fb03a313cea562fb9bb2415eb6b85e1a.js"></script>
+            </div>
+            <p>
+              Which gives us something like this:
+            </p>
+            <p class="blog-images">
+              <img src="blog-pics/basicCustomButtonVC.png" class="nes-container is-rounded blog-image" id="" alt="">
+            </p>
+
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="footer" id="contact">
+    <h2 class="section-title title">Hit Me Up</h2>
+    <div class="nes-container is-rounded contact-links glass icon-list">
+      <a href="https://iosdev.space/@StinkyStinkFace" target="_blank" class="">
+        <img src="../pics/mastodon.png" class="nes-icon is-large">
+      </a>
+      <a href="https://github.com/meltonlogan615" target="_blank">
+        <i class="nes-icon github is-large"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/logan-m-7924021b5/" target="_blank">
+        <i class="nes-icon linkedin is-large"></i>
+      </a>
+      <a href="#">
+        <i class="nes-icon gmail is-large"></i>
+      </a>
+    </div>
+  </section>
+</body>
+
+</html>
