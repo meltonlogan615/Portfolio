@@ -32,7 +32,7 @@
                 <li class="nav-item"><a href="#work">Work</a></li>
                 <li class="nav-item"><a href="#personal">Personal</a></a></li>
                 <li class="nav-item"><a href="#contact">Contact</a></li>
-                <li class="nav-item"><a href="blogs/blog-index.html">Rants</a></li>
+                <!-- <li class="nav-item"><a href="blogs/blog-index.html">Rants</a></li> -->
 
             </ul>
         </nav>
@@ -486,30 +486,42 @@
 
     <!-- CONTACT -->
     <section class="footer" id="contact">
-        <h2 class="section-title title">Hit Me Up</h2>
+        <h2 class="section-title title">Holler</h2>
         <div class="nes-container is-rounded contact-links glass icon-list">
-            <a href="https://twitter.com/StinkyStinkFace" target="_blank" class="">
+            <a href="https://twitter.com/StinkyStinkFace" target="_blank" class="contact-button">
                 <img src="pics/mastodon.png" class="nes-icon is-large">
             </a>
-            <a href="https://github.com/meltonlogan615" target="_blank">
+            <a href="https://github.com/meltonlogan615" target="_blank" class="contact-button">
                 <i class="nes-icon github is-large"></i>
             </a>
-            <a href="https://www.linkedin.com/in/logan-m-7924021b5/" target="_blank">
+            <a href="https://www.linkedin.com/in/logan-m-7924021b5/" target="_blank" class="contact-button">
                 <i class="nes-icon linkedin is-large"></i>
             </a>
-            <a href="#contact" onclick="brokenLink()">
+            <a href="#contact" onclick="brokenLink()" class="contact-button">
                 <i class="nes-icon gmail is-large"></i>
             </a>
+            <!-- <button id="invasion-button" class="contact-button">
+                <i class="nes-icon trophy is-large"></i>
+            </button> -->
         </div>
     </section>
 
     <!-- MODAL FOR IMAGES  -->
-    <div id="myModal" class="modal">
-        <span class="close">&times;</span>
-        <img class="modal-content" id="img01">
-        <div id="caption"></div>
+    <div id="invasion-modal" class="modal">
+        <span class="close" id="modal-close">&times;</span>
+        <iframe src="invasion/stolen.html" frameborder="0"></iframe>
     </div>
     <script>
+        var modal = document.getElementById("invasion-modal");
+        var btn = document.getElementById("invasion-button")
+        var close = document.getElementById("modal-close")
+        btn.onclick = function () {
+            modal.style.display = "block"
+        }
+        close.onclick = function () {
+            modal.style.display = "none"
+        }
+
         function brokenLink() {
             alert("This is still being built. Sorry.")
         }

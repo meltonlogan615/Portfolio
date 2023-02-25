@@ -93,6 +93,11 @@ li {
     list-style-type: none;
 }
 
+button {
+    background-color: rgba(0, 0, 0, 0.0);
+    border: none;
+}
+
 .hero {
     display: flex;
     justify-content: center;
@@ -322,9 +327,10 @@ li {
 .glass {
     background: rgba(255, 255, 255, 0.664);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
-    backdrop-filter: blur(21px);
+    backdrop-filter: blur(11px);
     -webkit-backdrop-filter: blur(11px);
     box-shadow: 0px 0px 12px #000000;
+    
 }
 
 /**** IMAGE MODAL ****/
@@ -348,37 +354,19 @@ li {
     /* Enable scroll if needed */
     background-color: rgb(0, 0, 0);
     /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9);
-    /* Black w/ opacity */
+    background-color: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(11px);
+    -webkit-backdrop-filter: blur(11px);
+}
+iframe {
+    background: none;
+    background-color: #000;
 }
 
-/* Modal Content (image) */
-.modal-content {
-    margin: auto;
-    display: block;
-    height: 80%;
-    max-height: 700px;
-}
-
-/* Caption of Modal Image */
-#caption {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-    text-align: center;
-    color: #ccc;
-    padding: 10px 0;
-    height: 150px;
-}
-
-/* Add Animation */
-.modal-content,
-#caption {
-    -webkit-animation-name: zoom;
-    -webkit-animation-duration: 0.6s;
-    animation-name: zoom;
-    animation-duration: 0.6s;
+.modal iframe {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.0);
 }
 
 @-webkit-keyframes zoom {
@@ -532,9 +520,17 @@ li {
     }
 
     .contact-links {
-        display: flex;
-        margin: 0 10rem;
+        display: block;
+        /* margin: 0 auto 2rem; */
         box-shadow: 0px 0px 12px #000000;
+    }
+
+    .contact-button {
+        margin: 20rem auto 2rem auto;
+    }
+
+    #invasion-button {
+        display: none;
     }
 }
 
@@ -662,4 +658,3 @@ p:has(> .blog-image) {
     font-family: 'Times New Roman', Times, serif;
     margin: 0 1rem;
 }
-

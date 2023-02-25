@@ -1,0 +1,22 @@
+
+.invasion-body {
+ /* backdrop-filter: blur(21px);
+ -webkit-backdrop-filter: blur(21px); */
+ width: 100%;
+ height: 100%;
+ margin: auto;
+}
+
+.game-view {
+ display: flex;
+ margin: 0 auto;
+ height: 40vw;
+ width: 60vw;
+}
+
+.game-view > canvas {
+ justify-items: center;
+ width: 100%;
+ height: 100%;
+ border-radius: 16px;
+}
