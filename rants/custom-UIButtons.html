@@ -32,22 +32,21 @@
         <li class="nav-item"><a href="../index.html#work">Work</a></li>
         <li class="nav-item"><a href="../index.html#personal">Personal</a></a></li>
         <li class="nav-item"><a href="../index.html#contact">Contact</a></li>
-        <li class="nav-item"><a href="blog-index.html">Rants</a></li>
+        <li class="nav-item"><a href="rant-index.html">Rants</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="blog-body" style="margin-bottom: 4rem;" id="apps">
+  <section class="rant-body" style="margin-bottom: 4rem;" id="apps">
     <h2 class="section-title">LET ME HIT THAT!</h2>
     <!-- SECTION VERBAGE -->
 
     <!-- I Like Buttons -->
     <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
       <p class="title">I Like Buttons</p>
-
       <div class="content-section">
         <article class="verbage">
-          <div class="blog-text">
+          <div class="rant-text">
             <p>I like buttons, and switches, and levers, and knobs that turn or click
               (especially the ones that pop out). And don't get me started on pull-cords.</p>
 
@@ -56,7 +55,7 @@
               continue doing whatever it was when my precious turned on me and left.</p>
           </div>
 
-          <div class="blog-footnote">
+          <div class="rant-footnote">
             <p>*I will use the device agnostic term "boop". Mobile devices get tapped, PCs get clicked. "Boop"
               effectively
               conveys the meaning without increasing ambiguity. Even though I will be discussing UIButtons that commonly
@@ -64,15 +63,15 @@
             </p>
             <p>
               If you want to download the completed project, <a href="https://github.com/meltonlogan615/ArticlesCode"
-                target="_blank" class="blog-link">Download ButtonFun from
+                target="_blank" class="rant-link">Download ButtonFun from
                 Github</a>.
             </p>
           </div>
         </article>
 
         <!-- SECTION IMAGES -->
-        <article class="blog-images">
-          <img src="blog-pics/baby-plucky.gif"
+        <article class="rant-images">
+          <img src="rant-pics/baby-plucky.gif"
             alt="A young Plucky Duck scolds his mother for her cold hearted attempt at pressing an elevator button. Only Plucky can push the button."
             class="nes-container is-rounded app-image" id="">
         </article>
@@ -85,25 +84,25 @@
 
       <div class="content-section">
         <article class="verbage">
-          <div class="blog-text">
+          <div class="rant-text">
             <p>UIKit gives us a few defaults right out of the gate.</p>
             <p>I don't want to get into most of these. It's what pretty obvious what each of them are used for.
             </p>
             <p>What I want talk about is that "Custom Button".</p>
-            <p><span class="blog-code">UIButton(type: .custom)</span></p>
-            <p>But before we belly up on this, I want to remind you that <span class="blog-code">UIButton</span>'s are a
-              subclass of <span class="blog-code">UIControl</span>, which is a subclass of <span
-                class="blog-code">UIView</span>.</p>
-            <p>Which means that <span class="blog-code">UIButton</span>s can be used in ways similar to <span
-                class="blog-code">UIView</span>s. This allows us to create buttons in different ways so the code isn't
+            <p><span class="rant-code">UIButton(type: .custom)</span></p>
+            <p>But before we belly up on this, I want to remind you that <span class="rant-code">UIButton</span>'s are a
+              subclass of <span class="rant-code">UIControl</span>, which is a subclass of <span
+                class="rant-code">UIView</span>.</p>
+            <p>Which means that <span class="rant-code">UIButton</span>s can be used in ways similar to <span
+                class="rant-code">UIView</span>s. This allows us to create buttons in different ways so the code isn't
               boring for us and it won't be boring for the user to see and use.</p>
           </div>
         </article>
 
         <!-- Screen Shots and Other images go here-->
-        <article class="blog-images">
-          <img src="blog-pics/allButtons.png" alt="" class="nes-container is-rounded app-image" id="" alt="">
-          <img src="blog-pics/buttonsCloseUp.png" alt="" class="nes-container is-rounded app-image" id="" alt="">
+        <article class="rant-images">
+          <img src="rant-pics/allButtons.png" alt="" class="nes-container is-rounded app-image" id="" alt="">
+          <img src="rant-pics/buttonsCloseUp.png" alt="" class="nes-container is-rounded app-image" id="" alt="">
         </article>
       </div>
     </div>
@@ -112,15 +111,15 @@
     <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
       <p class="title">Defining A Custom Button</p>
       <div class="content-section">
-        <article class="verbage blog-noImage">
-          <div class="blog-text">
+        <article class="verbage rant-noImage">
+          <div class="rant-text">
             <p>It's actually pretty easy.</p>
-            <div class="nes-container is-rounded blog-snippet">
+            <div class="nes-container is-rounded rant-snippet">
               <script src="https://gist.github.com/meltonlogan615/e3379075b370c2577048ff51d7280564.js"></script>
             </div>
             <p>BOOM! Did you see that or did I go too fast?</p>
             <p>Here it is again:</p>
-            <div class="nes-container is-rounded blog-snippet">
+            <div class="nes-container is-rounded rant-snippet">
               <script src="https://gist.github.com/meltonlogan615/e3379075b370c2577048ff51d7280564.js"></script>
             </div>
             <p class="article-subtitle">REKT!</p>
@@ -136,13 +135,13 @@
       <p class="title">How To Fail Properly</p>
       <div class="content-section">
         <article class="verbage">
-          <div class="blog-text">
+          <div class="rant-text">
             <p>This code will not display anything in the view.</p>
-            <div class="nes-container is-rounded blog-snippet">
+            <div class="nes-container is-rounded rant-snippet">
               <script src="https://gist.github.com/meltonlogan615/24e07c19e7dc16447962eeae68dd9986.js"></script>
             </div>
             <p>This one will.</p>
-            <div class="nes-container is-rounded blog-snippet">
+            <div class="nes-container is-rounded rant-snippet">
               <script src="https://gist.github.com/meltonlogan615/400d37ffef5b6d430a5503501bdd2a28.js"></script>
             </div>
             <p>Now for the question, "what did I do wrong?"</p>
@@ -155,14 +154,14 @@
           <div class="content-section">
             <div class="label-image-stack">
               <p>Custom Button</p>
-              <p class="blog-images">
-                <img src="blog-pics/customButtonVC.png" alt="" class="nes-container is-rounded app-image" id="" alt="">
+              <p class="rant-images">
+                <img src="rant-pics/customButtonVC.png" alt="" class="nes-container is-rounded app-image" id="" alt="">
               </p>
             </div>
             <div class="label-image-stack">
               <p>System Button</p>
-              <p class="blog-images">
-                <img src="blog-pics/systemButtonVC.png" alt="" class="nes-container is-rounded app-image single-image"
+              <p class="rant-images">
+                <img src="rant-pics/systemButtonVC.png" alt="" class="nes-container is-rounded app-image single-image"
                   id="" alt="">
               </p>
             </div>
@@ -175,18 +174,18 @@
     <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
       <p class="title">Why The System Button Works</p>
       <div class="content-section">
-        <article class="verbage blog-noImage">
-          <div class="blog-text">
+        <article class="verbage rant-noImage">
+          <div class="rant-text">
             <p>To understand why
-              <span class="blog-code">.custom</span> doesn't work when
-              <span class="blog-code">.system</span> does, we need to take a quick look at the documentation (groan).
+              <span class="rant-code">.custom</span> doesn't work when
+              <span class="rant-code">.system</span> does, we need to take a quick look at the documentation (groan).
             </p>
             <p>Hidden deep in the <a href="https://developer.apple.com/documentation/uikit/uibutton/1624028-init
-              " target="_blank" class="blog-link">
+              " target="_blank" class="rant-link">
                 Creating buttons of a specific type</a> subheading is the answer:
             </p>
             <p>
-            <blockquote class="blog-quote">
+            <blockquote class="rant-quote">
               When creating a custom button — a button with the type UIButton.ButtonType.custom — <em>the frame of the
                 button is set to (0, 0, 0, 0) initially</em>*. Before adding the button to your interface, you should
               update the
@@ -195,12 +194,12 @@
             </p>
             <p>
               There we have it. Both the X & Y positions are 0, which is fine. It's up there hanging out with the time.
-              The problem is that both the <span class="blog-code">width:</span> & <span
-                class="blog-code">height:</span> properties are also set to 0.
+              The problem is that both the <span class="rant-code">width:</span> & <span
+                class="rant-code">height:</span> properties are also set to 0.
             </p>
             <p>
-              This is opposed to <span class="blog-code">UIButton(type: .system)</span> which has an intrinsic width
-              and heigth based on the value of the <span class="blog-code">.setTitle(_ title: String?, for:
+              This is opposed to <span class="rant-code">UIButton(type: .system)</span> which has an intrinsic width
+              and heigth based on the value of the <span class="rant-code">.setTitle(_ title: String?, for:
                 UIControl.State)</span> as well some as default values set for other properties.
             </p>
           </div>
@@ -214,11 +213,11 @@
     <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
       <p class="title">How to Create A Custom UIButton</p>
       <div class="content-section">
-        <article class="verbage blog-noImage">
-          <div class="blog-text">
+        <article class="verbage rant-noImage">
+          <div class="rant-text">
             <p>If you've already downloaded the source code for this, I'll be doing everything in the <span
-                class="blog-code">Views > CustomButton.swift</span> file. If you haven't yet or want to <a href=""
-                target="_blank" class="blog-link">you can do so here</a>.
+                class="rant-code">Views > CustomButton.swift</span> file. If you haven't yet or want to <a href=""
+                target="_blank" class="rant-link">you can do so here</a>.
             </p>
             <p>We could do all of this within a ViewController, but that can get messy real quick. And if you wanted to
               use it elsewhere in your project, you'd be <abbr title="Shit Out of Luck">SOL</abbr> and have to keep
@@ -229,7 +228,7 @@
               Rather, let's make it once and then create new instances that joker as it's needed. Here's the basics of
               what we need.
             </p>
-            <div class="nes-container is-rounded blog-snippet">
+            <div class="nes-container is-rounded rant-snippet">
               <script src="https://gist.github.com/meltonlogan615/d03281c9fa4ffb818a4df2b80a70ff53.js"></script>
             </div>
             <p>
@@ -237,7 +236,7 @@
               frame.*
             </p>
           </div>
-          <div class="blog-footnote">
+          <div class="rant-footnote">
             <p>If you are working out of the project that I created, if you run the project as is, then boop into the
               space where "Custom Button" should be, it'll work as we'd expect.</p>
           </div>
@@ -249,34 +248,34 @@
     <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
       <p class="title">In The Before Times...</p>
       <div class="content-section">
-        <article class="verbage blog-noImage">
-          <div class="blog-text">
+        <article class="verbage rant-noImage">
+          <div class="rant-text">
             <p>
               Prior to iOS 15, you would set the button's properties directly.
             </p>
             <p>
               If you did something like this:
             </p>
-            <div class="nes-container is-rounded blog-snippet">
+            <div class="nes-container is-rounded rant-snippet">
               <script src="https://gist.github.com/meltonlogan615/efe248aac7e4eff05fb2c375bd0eb952.js"></script>
             </div>
             <p>
               You get something like this:
             </p>
-            <p class="blog-images">
-              <img src="blog-pics/customButtonOld2.png" class="nes-container is-rounded blog-image" id="" alt="">
+            <p class="rant-images">
+              <img src="rant-pics/customButtonOld2.png" class="nes-container is-rounded rant-image" id="" alt="">
             </p>
             <p>
               If you plug this into Xcode, you'll get a warning on line 3 (<span
-                class="blog-code">customButton.contentEdgeInsets = UIEdgeInsets(top: 10, left: 20, bottom: 10, right:
+                class="rant-code">customButton.contentEdgeInsets = UIEdgeInsets(top: 10, left: 20, bottom: 10, right:
                 20)</span>)
             </p>
-            <p class="blog-images">
-              <img src="blog-pics/contentEdgeInsetWarning.png" class="nes-container is-rounded blog-image" id=""
+            <p class="rant-images">
+              <img src="rant-pics/contentEdgeInsetWarning.png" class="nes-container is-rounded rant-image" id=""
                 alt="Xcode Warning: 'contentEdgeInsets' was deprecated in iOS 15.0: This property is ignored when using UIButtonConfiguration">
             </p>
             <p>
-              What in the hell are we supposed to do with <span class="blog-code">UIButtonConfiguration</span>?
+              What in the hell are we supposed to do with <span class="rant-code">UIButtonConfiguration</span>?
             </p>
           </div>
         </article>
@@ -287,32 +286,32 @@
     <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
       <p class="title">UIButtonConfiguration</p>
       <div class="content-section">
-        <article class="verbage blog-noImage">
-          <div class="blog-text">
+        <article class="verbage rant-noImage">
+          <div class="rant-text">
             <p>
-              The <span class="blog-code">UIButton.Configuration</span> will be the backbone for (almost) everything we
+              The <span class="rant-code">UIButton.Configuration</span> will be the backbone for (almost) everything we
               need going forward. And all we need to get started are two lines.
             </p>
             <p>
-              I try to keep my <span class="blog-code">init</span> pretty short. One of the ways I like to do that is by
+              I try to keep my <span class="rant-code">init</span> pretty short. One of the ways I like to do that is by
               abstracting out all of the properties that relate to appearance into a seperate method, which then gets
-              called in the <span class="blog-code">init</span>.
+              called in the <span class="rant-code">init</span>.
             </p>
-            <div class="nes-container is-rounded blog-snippet">
+            <div class="nes-container is-rounded rant-snippet">
               <script src="https://gist.github.com/meltonlogan615/9fd6563083d0902895a6f97a60b97bb5.js"></script>
             </div>
             <p>
               On Line 16, I create a Method that contains an Instance of <span
-                class="blog-code">UIButton.Configuration.filled()</span>. It
+                class="rant-code">UIButton.Configuration.filled()</span>. It
               will serve as the container for all of the properties we're about to mess around with.
             </p>
             <p>
-              <span class="blog-code">.filled()</span> is one of several static methods available within
-              <span class="blog-code">UIButton.Configuration</span>. Each of them provide a set of default properties
+              <span class="rant-code">.filled()</span> is one of several static methods available within
+              <span class="rant-code">UIButton.Configuration</span>. Each of them provide a set of default properties
               that are consistent
               with <a
                 href="https://developer.apple.com/design/human-interface-guidelines/components/menus-and-actions/buttons#style"
-                target="_blank" class="blog-link">Apple's Human Interface Guidelines</a>.
+                target="_blank" class="rant-link">Apple's Human Interface Guidelines</a>.
             </p>
           </div>
         </article>
@@ -323,8 +322,8 @@
     <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
       <p class="title">Default Configurations</p>
       <div class="content-section">
-        <article class="verbage blog-noImage">
-          <div class="blog-text">
+        <article class="verbage rant-noImage">
+          <div class="rant-text">
             <p class="article-subtitle">Configurations</p>
             <p>
               Let's look at each of the default configurations available.
@@ -336,75 +335,75 @@
               <div class="example">
                 <p class="article-subtitle">
                   Plain
-                <div class="blog-code">UIButton.Configuration.plain()</div>
+                <div class="rant-code">UIButton.Configuration.plain()</div>
                 </p>
-                <p class="blog-images">
-                  <img src="blog-pics/plainbutton.png" class="nes-container is-rounded blog-image" id="" alt="">
+                <p class="rant-images">
+                  <img src="rant-pics/plainbutton.png" class="nes-container is-rounded rant-image" id="" alt="">
                 </p>
               </div>
               <div class="example">
                 <p class="article-subtitle">
                   Gray
-                <div class="blog-code">UIButton.Configuration.gray()</div>
+                <div class="rant-code">UIButton.Configuration.gray()</div>
                 </p>
-                <p class="blog-images">
-                  <img src="blog-pics/grayButton.png" class="nes-container is-rounded blog-image" id="" alt="">
+                <p class="rant-images">
+                  <img src="rant-pics/grayButton.png" class="nes-container is-rounded rant-image" id="" alt="">
                 </p>
               </div>
               <div class="example">
                 <p class="article-subtitle">
                   Tinted
-                <div class="blog-code">UIButton.Configuration.tinted()</div>
+                <div class="rant-code">UIButton.Configuration.tinted()</div>
                 </p>
-                <p class="blog-images">
-                  <img src="blog-pics/tintedButton.png" class="nes-container is-rounded blog-image" id="" alt="">
+                <p class="rant-images">
+                  <img src="rant-pics/tintedButton.png" class="nes-container is-rounded rant-image" id="" alt="">
                 </p>
               </div>
               <div class="example">
                 <p class="article-subtitle">
                   Filled
-                <div class="blog-code">UIButton.Configuration.filled()</div>
+                <div class="rant-code">UIButton.Configuration.filled()</div>
                 </p>
-                <p class="blog-images">
-                  <img src="blog-pics/filledButton.png" class="nes-container is-rounded blog-image" id="" alt="">
+                <p class="rant-images">
+                  <img src="rant-pics/filledButton.png" class="nes-container is-rounded rant-image" id="" alt="">
                 </p>
 
               </div>
               <div class="example">
                 <p class="article-subtitle">
                   Borderless
-                <div class="blog-code">UIButton.Configuration.borderless()</div>
+                <div class="rant-code">UIButton.Configuration.borderless()</div>
                 </p>
-                <p class="blog-images">
-                  <img src="blog-pics/borderlessButton.png" class="nes-container is-rounded blog-image" id="" alt="">
+                <p class="rant-images">
+                  <img src="rant-pics/borderlessButton.png" class="nes-container is-rounded rant-image" id="" alt="">
                 </p>
               </div>
               <div class="example">
                 <p class="article-subtitle">
                   Bordered
-                <div class="blog-code">UIButton.Configuration.bordered()</div>
+                <div class="rant-code">UIButton.Configuration.bordered()</div>
                 </p>
-                <p class="blog-images">
-                  <img src="blog-pics/borderedButton.png" class="nes-container is-rounded blog-image" id="" alt="">
+                <p class="rant-images">
+                  <img src="rant-pics/borderedButton.png" class="nes-container is-rounded rant-image" id="" alt="">
                 </p>
               </div>
               <div class="example">
                 <p class="article-subtitle">
                   Bordered Tinted
-                <div class="blog-code">UIButton.Configuration.borderedTinted()</div>
+                <div class="rant-code">UIButton.Configuration.borderedTinted()</div>
                 </p>
-                <p class="blog-images">
-                  <img src="blog-pics/borderedTintedButton.png" class="nes-container is-rounded blog-image" id=""
+                <p class="rant-images">
+                  <img src="rant-pics/borderedTintedButton.png" class="nes-container is-rounded rant-image" id=""
                     alt="">
                 </p>
               </div>
               <div class="example">
                 <p class="article-subtitle">
                   Bordered Prominent
-                <div class="blog-code">UIButton.Configuration.borderedProminent()</div>
+                <div class="rant-code">UIButton.Configuration.borderedProminent()</div>
                 </p>
-                <p class="blog-images">
-                  <img src="blog-pics/BorderedProminentButton.png" class="nes-container is-rounded blog-image" id=""
+                <p class="rant-images">
+                  <img src="rant-pics/BorderedProminentButton.png" class="nes-container is-rounded rant-image" id=""
                     alt="">
                 </p>
               </div>
@@ -419,83 +418,245 @@
       <p class="title"> Sizes</p>
       <div class="content-section">
         <article class="verbage ">
-          <div class="blog-text">
+          <div class="rant-text">
             <p class="article-subtitle">In Order From Top To Bottom:</p>
-            <p>Mini: <span class="blog-code">config.buttonSize = .mini</span></p>.
-            <p>Small: <span class="blog-code">config.buttonSize = .small</span></p>.
-            <p>Medium: <span class="blog-code">config.buttonSize = .medium</span></p>.
-            <p>Large: <span class="blog-code">config.buttonSize = .large</span></p>.
+            <p>Mini: <span class="rant-code">config.buttonSize = .mini</span></p>.
+            <p>Small: <span class="rant-code">config.buttonSize = .small</span></p>.
+            <p>Medium: <span class="rant-code">config.buttonSize = .medium</span></p>.
+            <p>Large: <span class="rant-code">config.buttonSize = .large</span></p>.
           </div>
         </article>
 
         <!-- Screen Shots and Other images go here-->
         <article class="verbage">
           <div class="content-section">
-            <p class="blog-images">
-              <img src="blog-pics/sizedButtons.png" alt="" class="nes-container is-rounded app-image" id="" alt="">
+            <p class="rant-images">
+              <img src="rant-pics/sizedButtons.png" alt="" class="nes-container is-rounded app-image" id="" alt="">
             </p>
           </div>
         </article>
       </div>
       <!-- <article class="verbage"> -->
       <div class="content-section">
-        <article class="verbage blog-noImage">
-          <div class="blog-text">
-            <p>Again, here I've only set the configuration's <span class="blog-code">title</span> and <span
-                class="blog-code" span>buttonSize</span> properties.</p>
+        <article class="verbage rant-noImage">
+          <div class="rant-text">
+            <p>Again, here I've only set the configuration's <span class="rant-code">title</span> and <span
+                class="rant-code" span>buttonSize</span> properties.</p>
             <p>The frame, text color, background color, and corner radius are all defaults for the <span
-                class="blog-code">bordered()</span>Configuration and their respective size.</p>
-            <div class="nes-container is-rounded blog-snippet">
+                class="rant-code">bordered()</span>Configuration and their respective size.</p>
+            <div class="nes-container is-rounded rant-snippet">
               <script src="https://gist.github.com/meltonlogan615/9e6033e867ddc00192ce69d7529e7f5c.js"></script>
             </div>
           </div>
-          <div class="blog-footnote">
+          <div class="rant-footnote">
             A quick little trick that I like, if you create a code snippet and need a placeholder, use <span
-              class="blog-code">
+              class="rant-code">
               <#Value#>
             </span>.
           </div>
         </article>
       </div>
 
-    </div> <!-- End of Size Section-->
+    </div>
 
     <!-- Using Your Custom Button -->
     <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
       <p class="title">Using Your Custom Button</p>
       <div class="content-section">
-        <article class="verbage blog-noImage">
-          <div class="blog-text">
+        <article class="verbage rant-noImage">
+          <div class="rant-text">
             <p>
               So far, with only two properties we've already come into a possible 32 different configuration
               combinations.</p>
             <p>To avoid getting deep into a mess, I'm gong to stick with <span
-                class="blog-code">UIButton.Configuration.bordered()</span> with a <span
-                class="blog-code">UIButton.Configuration.Size</span> of <span class="blog-code">.medium</span>.
+                class="rant-code">UIButton.Configuration.bordered()</span> with a <span
+                class="rant-code">UIButton.Configuration.Size</span> of <span class="rant-code">.medium</span>.
             </p>
             <p>
               If you are coding along and not using the source code for this, then you will probably want to see the
               thing that you are building.
             </p>
             <p>
-              This is all that I have in my <span class="blog-code">CustomButtonViewController</span>:
+              This is all that I have in my <span class="rant-code">CustomButtonViewController</span>:
             </p>
-            <div class="nes-container is-rounded blog-snippet">
+            <div class="nes-container is-rounded rant-snippet">
               <script src="https://gist.github.com/meltonlogan615/fb03a313cea562fb9bb2415eb6b85e1a.js"></script>
             </div>
             <p>
               Which gives us something like this:
             </p>
-            <p class="blog-images">
-              <img src="blog-pics/basicCustomButtonVC.png" class="nes-container is-rounded blog-image" id="" alt="">
+            <p class="rant-images">
+              <img src="rant-pics/basicCustomButtonVC.png" class="nes-container is-rounded rant-image" id="" alt="">
             </p>
+
+          </div>
+          <p>
+            NOTE: KEEP THIS IN YOUR POCKET! We'll keep coming back to this through out.
+          </p>
+        </article>
+      </div>
+    </div>
+
+    <!-- Back, Back, and Forth and Forth -->
+    <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+      <p class="title">Back, Back, and Forth and Forth</p>
+      <div class="content-section">
+        <article class="verbage rant-noImage">
+          <p class="article-subtitle">Our love goes...</p>
+          <div class="rant-text">
+            <p>
+              The default background looks bland. On top of that, gray tends to be a color associated with elements that
+              are not user-interaction enabled. (Remeber the iPhone 4S wifi chip issues?)
+            </p>
+            <p>
+              Because I'm lazy, I'm going to use one of the <span class="rant-code">UIColor</span> options that <span
+                class="rant-code">UIKit</span> gives us for free.
+            </p>
+            <p>
+              On the line following <span class="rant-code">config.buttonSize = .medium</span>, I'm going to add <span
+                class="rant-code">config.baseBackgroundColor = .link</span>
+            </p>
+            <p>
+              There's an obvious problem you'll notice if the you run the project. The button's title is no longer
+              visable. <span class="rant-code">UIColor.link</span> is the default tint / text color / title color for
+              <span class="rant-code">UIButtons</span>.
+            </p>
+            <p>
+              Let's fix that.
+            </p>
+            <p>
+              Just below the line where we set the value of <span class="rant-code">config.baseBackgroundColor</span>,
+              we're going to add the following:
+            </p>
+            <p>
+              <span class="rant-code">config.baseForegroundColor = .systemBackground</span>
+            </p>
+            <p>If your code looks like this:</p>
+            <p>
+              <script src="https://gist.github.com/meltonlogan615/1b6f90cdf62779573c9c51b24232b8f1.js"></script>
+            </p>
+            <p>Your button should look like this:</p>
+            <p class="rant-images">
+              <img src="rant-pics/buttonBackgroundForeground.png" class="nes-container is-rounded rant-image"
+                alt="UIButton with Blue Background and White Foreground.">
+            </p>
+            <p>
+              It's not by any means flashy or original. I'd actually like to point out that our
+              <span class="rant-code">UIButton.Configuration.bordered()</span> now looks exactly like it is a
+              <span class="rant-code">UIButton.Configuration.filled()</span>.
+            </p>
+            <p>
+              I assure you, that is on purpose. I'll explain.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Decisions, decisions -->
+    <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+      <p class="title">Decisions, decisions...</p>
+      <div class="content-section">
+        <article class="verbage rant-noImage">
+          <div class="rant-text">
+            <p>
+              We are constantly making decisions. What to eat, what to wear, who we spend time around.
+            </p>
+            <p>
+              As developers, we have to make decisions about the problems that we are trying to solve.
+            </p>
+            <p>
+              I'm probably telling on myself here, but I'm lazy. If there's an easy way to do something, I'm doing that.
+              If it's already been done, I'll steal that code, install that package or SDK, etc. There's no point trying
+              to reinvent something that's proven and effective.
+            </p>
+            <p>
+              Even doing all of this is a form of laziness. Imagine having to style each and every button in every view.
+              My retort is simply: Nope. Not going to do it.
+            </p>
+            <p>
+              Take the time to understand what the problem is, consider your options, and take the most efficent path to
+              resolution.
+            </p>
+            <p>
+              With all of that said, if you want to update the <span class="rant-code">var config =
+                UIButton.Configuration.bordered()</span> to <span class="rant-code">.filled()</span>, by all means, go
+              for it. I'm going to remain stubborn as an old goat and leave it as is.
+            </p>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- Iconography -->
+    <div class="nes-container is-rounded with-title glass">
+      <p class="title">Iconography</p>
+      <div class="content-section">
+        <article class="verbage rant-noImage">
+          <div class="rant-text">
+            <p>
+              Often times, buttons will have an image that will provide additional context to the button's purpose.
+              These
+              can either be images from your Assets folder or from SF Symbols.
+            </p>
+            <p>
+              Again, lazy. SF Symbols.
+            </p>
+            <p>
+              Following the background and foreground colors, add this line: <span class="rant-code">config.image =
+                UIImage(systemName: "key.horizontal.fill")</span> or whatever you'd like.
+            </p>
+            <p>
+              You should end up with something like this:
+            </p>
+            <p class="rant-images">
+              <img src="rant-pics/keyButton.png" class="nes-container is-rounded rant-image" alt="">
+            </p>
+            <p>
+              The image is there, but it feels a little cramped.
+            </p>
+            <p> We can give the image a little breathing room by adding
+              <span class="rant-code">config.imagePadding = 6</span> to the line below the one where we set the image.
+            </p>
+            <p class="rant-images">
+              <img src="rant-pics/keyButtonSpaced.png" class="nes-container is-rounded rant-image" alt="">
+            </p>
+            <p>
+              That's better, but what if we don't like where it's located? What if we wanted it to the right of the
+              next? Above? Below?
+            </p>
+            <p>
+              <span class="rant-code">config.imagePlacement</span> is what we need. Here are your options:
+            </p>
+            <div class="content-section">
+              <div class="rant-code-options">
+                <p>
+                  <span class="rant-code">config.imagePlacement = .top</span>
+                </p>
+                <p>
+                  <span class="rant-code">config.imagePlacement = .leading</span>
+                </p>
+                <p>
+                  <span class="rant-code">config.imagePlacement = .trailing</span>
+                </p>
+                <p>
+                  <span class="rant-code">config.imagePlacement = .bottom</span>
+                </p>
+              </div>
+              <div class="rant-images">
+                <img src="rant-pics/keyButtonStack.png" class="nes-container is-rounded rant-image" alt="">
+              </div>
+
+            </div>
 
           </div>
         </article>
       </div>
     </div>
+
   </section>
 
+  <!-- FOOTER -->
   <section class="footer" id="contact">
     <h2 class="section-title title">Holler at ya boi</h2>
     <div class="nes-container is-rounded contact-links glass icon-list">

@@ -552,17 +552,17 @@ iframe {
     list-style-image: url(pics/listItem.png);
 }
 
-/* BLOG STUFF */
+/* rant STUFF */
 
-.blog-body {
+.rant-body {
     line-height: 1.25;
 }
 
-.blog-body > .glass {
+.rant-body > .glass {
     background: rgba(255, 255, 255, 0.85);
 }
 
-.blog-text {
+.rant-text {
     font-family: Arial, Helvetica, sans-serif;
     font-size: large;
     margin-bottom: 2rem;
@@ -586,12 +586,12 @@ iframe {
     font-family: player2;
 }
 
-.blog-text > p {
+.rant-text > p {
     margin: 1rem auto;
     width: 100%;
 }
 
-.blog-code {
+.rant-code {
     font-family: "Courier New", Courier, monospace;
     font-weight: 600;
     padding: 0 0.25rem;
@@ -601,23 +601,23 @@ iframe {
     margin: auto
 }
 
-.blog-footnote {
+.rant-footnote {
     font-family: Arial, Helvetica, sans-serif;
     font-size: medium;
     text-align: justify;
     line-height: 1rem;
 }
 
-.blog-noImage {
+.rant-noImage {
     width: 70%;
 }
 
-.blog-images {
+.rant-images {
     display: flex;
     background-color: white;
 }
 
-.blog-image {
+.rant-image {
     /* display: block; */
     margin: 0 2rem;
     padding: 0;
@@ -626,7 +626,7 @@ iframe {
     box-shadow: 0px 0px 12px #000000;
 }
 
-.blog-snippet {
+.rant-snippet {
     background-color: rgba(246, 246, 246, 1.0);
     margin-top: 50rem;
 }
@@ -636,7 +636,7 @@ iframe {
     text-align: center;
 }
 
-p:has(> .blog-image) {
+p:has(> .rant-image) {
     text-align: center;
     justify-items: center;
     width: fit-content;
@@ -648,13 +648,22 @@ p:has(> .blog-image) {
     margin-bottom: 2rem;
 }
 
-.blog-link {
+.rant-link {
     font-weight: 600;
     font-family: 'Courier New', Courier, monospace;
     text-decoration: underline;
 }
 
-.blog-quote {
+.rant-quote {
     font-family: 'Times New Roman', Times, serif;
     margin: 0 1rem;
+}
+
+.rant-code-options {
+    display: block;
+    align-self: center;
+}
+
+.rant-code-options > .p {
+    
 }

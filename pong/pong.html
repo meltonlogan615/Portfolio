@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../nes.min.css">
   <link rel="stylesheet" href="../style.css">
-  <link rel="stylesheet" href="invasion.css">
+  <link rel="stylesheet" href="pong.css">
   <title>Logan on...</title>
   <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
   <link rel="icon" href="pics/apple-touch-icon.png" type="image/x-icon">
@@ -27,31 +27,41 @@
   <nav class="top-nav nes-container is-rounded glass">
     <ul>
       <li class="nav-item"><a href="../index.html">Home</a></li>
-      <li class="nav-item"><a href="../pong/pong.html">Pong</a></li>
+      <li class="nav-item"><a href="../invasion/invasion.html">Space Invaders</a></li>
     </ul>
   </nav>
 </header>
 
 <body>
-  <h2 class="section-title">Space Invaders</h1>
+  <h2 class="section-title">Pong</h1>
     <section class="instructions">
       <div class="nes-container is-rounded glass">
         <div class="content-section">
           <article class="verbage">
             <div class="verbage-text">
               <p>
-                Use Arrows ⇦ & ⇨ to move, Space Bar to fire.
+                A: Moves Left Paddle Up.
               </p>
               <p>
-                No scoring. Your only mission is to survive.
+                Z: Moves Left Paddle Down.
+              </p>
+            </div>
+          </article>
+          <article class="verbage">
+            <div class="verbage-text">
+              <p>
+                P: Moves Right Paddle Up.
+              </p>
+              <p>
+                L: Moves Right Paddle Down.
               </p>
             </div>
           </article>
         </div>
-        <canvas class=" nes-container is-rounded" id="canvas" width="800" height="500"></canvas>
+        <canvas class=" nes-container is-rounded" id="pongCanvas" width="960" height="640"></canvas>
     </section>
 
-    <script src="invasion.js"></script>
+    <script src="pong.js"></script>
 </body>
 
 </html>

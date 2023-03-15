@@ -1,7 +1,7 @@
-
+/* 
 .invasion-body {
- /* backdrop-filter: blur(21px);
- -webkit-backdrop-filter: blur(21px); */
+ backdrop-filter: blur(21px);
+ -webkit-backdrop-filter: blur(21px); 
  width: 100%;
  height: 100%;
  margin: auto;
@@ -19,4 +19,18 @@
  width: 100%;
  height: 100%;
  border-radius: 16px;
+} */
+
+.instructions {
+ display: flex;
+ margin: 0.5rem;
+ text-align: left;
+ justify-content: space-around;
+ width: 100%;
+}
+
+canvas {
+ background: rgb(3, 10, 3);
+ display: block;
+ margin: 1rem auto 2rem;
 }
