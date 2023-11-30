@@ -1,0 +1,14 @@
+
+.instructions {
+ display: flex;
+ margin: 0.5rem;
+ text-align: left;
+ justify-content: space-around;
+ width: 100%;
+}
+
+canvas {
+ background: rgb(0, 110, 0);
+ display: block;
+ margin: 1rem auto 2rem;
+}

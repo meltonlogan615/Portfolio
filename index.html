@@ -1,538 +1,611 @@
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="nes.min.css">
-    <link rel="stylesheet" href="style.css">
-    <link rel="script" href="global.js">
-    <title>Logan Melton</title>
-    <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
-    <link rel="icon" href="pics/apple-touch-icon.png" type="image/x-icon">
-    <link rel="icon" href="pics/favicon-32x32.png" type="image/x-icon">
-    <link rel="icon" href="pics/favicon-16x16.png" type="image/x-icon">
-    <link rel="icon" href="pics/android-chrome-144x144.png" type="image/x-icon">
-    <script src="imageZoom.js"></script>
+<head id="main">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="nes.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <title>Logan Melton</title>
+  <link rel="icon" href="pics/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="pics/apple-touch-icon.png" type="image/x-icon">
+  <link rel="icon" href="pics/favicon-32x32.png" type="image/x-icon">
+  <link rel="icon" href="pics/favicon-16x16.png" type="image/x-icon">
+  <link rel="icon" href="pics/android-chrome-144x144.png" type="image/x-icon">
+
 </head>
 
 <body>
-    <header>
-        <div class="hero">
-            <div class="nes-container is-rounded hero-text glass" style="margin-bottom: 4rem;">
-                <h1 class="page-title">Logan Melton</h1>
-                <div class="page-subtitle">iOS Developer</div>
-            </div>
-            <img src="pics/profile.png" alt="Picture of Logan" class="nes-container is-rounded profile-image glass">
-        </div>
-        <nav class="top-nav nes-container is-rounded glass">
-            <ul>
-                <li class="nav-item"><a href="#">Home</a></li>
-                <li class="nav-item"><a href="#apps"> App Development</a></li>
-                <li class="nav-item"><a href="#work">Work</a></li>
-                <li class="nav-item"><a href="#personal">Personal</a></a></li>
-                <li class="nav-item"><a href="#contact">Contact</a></li>
-                <li class="nav-item"><a href="pong/pong.html">Play</a></li>
-                <!-- <li class="nav-item"><a href="rants/rants-index.html">Rants</a></li> -->
+  <header>
+    <div class="hero">
+      <div class="nes-container is-rounded hero-text glass" style="margin-bottom: 4rem;">
+        <h1 class="page-title">Logan Melton</h1>
+        <div class="page-subtitle">iOS Developer</div>
+      </div>
+      <img src="pics/profile.png" alt="Picture of Logan" class="nes-container is-rounded profile-image glass">
+    </div>
+    <nav class="top-nav nes-container is-rounded glass">
+      <ul>
+        <li class="nav-item"><a href="#">Home</a></li>
+        <li class="nav-item"><a href="#apps"> App Development</a></li>
+        <li class="nav-item"><a href="#work">Work</a></li>
+        <li class="nav-item"><a href="#personal">Personal</a></a></li>
+        <li class="nav-item"><a href="#contact">Contact</a></li>
+        <li class="nav-item"><a href="pong/pong.html">Arcade</a></li>
+        <!-- <li class="nav-item"><a href="rants/rants-index.html">Rants</a></li> -->
 
-            </ul>
-        </nav>
-    </header>
-
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
     <!-- APPS SECTION -->
     <section class="" style="margin-bottom: 4rem;" id="apps">
-        <h2 class="section-title">App Development</h2>
+      <h2 class="section-title">App Development</h2>
 
-        <!-- FloridaMan -->
-        <div class=" nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
-            <p class="title">Florida Man</p>
-            <div class="content-section">
-                <article class="verbage">
-                    <h4 class="article-subtitle">Swift - UIKit - WebKit</h4>
-                    <div class="verbage-text">
-                        <!-- Scope -->
-                        <details>
-                            <summary class="details-title">Scope:</summary>
-                            <p class="nes-container is-rounded glass details-text">
-                                Create an app that shows "Florida Man" articles for the current
-                                date in previous years.
-                            </p>
-                        </details class="lists">
-                        <!-- Desired Features -->
-                        <details>
-                            <summary class="details-title">Features:</summary>
-                            <ul class="nes-container is-rounded glass details-text work-details">
-                                <li>Ability To Share Articles</li>
-                                <li>Search by Date</li>
-                            </ul>
-                        </details>
-                        <!-- Process -->
-                        <details>
-                            <summary class="details-title">Process:</summary>
-                            <p class="nes-container is-rounded glass details-text">
-                                This project was pretty cut and dry. Once the API was in place, the build was pretty
-                                intuitive.
-                                <br>
-                                Custom Table View Cells were used rather than default configurations.
-                                Unfortunately, Apple's API for UIDatePicker does not allow for only Month and Date
-                                selections.
-                                Can be futher iterated upon and provide a cleaner UX.
-                            </p>
-                        </details>
+      <!-- FloridaMan -->
+      <div class=" nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+        <p class="title">Florida Man</p>
+        <div class="content-section">
+          <article class="verbage">
+            <h4 class="article-subtitle">Swift - UIKit - WebKit</h4>
+            <div class="verbage-text">
+              <!-- Scope -->
+              <details>
+                <summary class="details-title">Scope:</summary>
+                <p class="nes-container is-rounded glass details-text">
+                  Create an app that shows "Florida Man" articles for the current
+                  date in previous years.
+                </p>
+              </details class="lists">
+              <!-- Desired Features -->
+              <details>
+                <summary class="details-title">Features:</summary>
+                <ul class="nes-container is-rounded glass details-text work-details">
+                  <li>Ability To Share Articles</li>
+                  <li>Search by Date</li>
+                </ul>
+              </details>
+              <!-- Process -->
+              <details>
+                <summary class="details-title">Process:</summary>
+                <p class="nes-container is-rounded glass details-text">
+                  This project was pretty cut and dry. Once the API was in place, the build was pretty
+                  intuitive.
+                  <br>
+                  Custom Table View Cells were used rather than default configurations.
+                  Unfortunately, Apple's API for UIDatePicker does not allow for only Month and Date
+                  selections.
+                  Can be futher iterated upon and provide a cleaner UX.
+                </p>
+              </details>
 
-                        <!-- Challenges -->
-                        <details>
-                            <summary class="details-title">Challenges:</summary>
-                            <p class="nes-container is-rounded glass details-text">
-                                Original intent was to use a standard news API with a default
-                                parameter "Florida Man". Unfortunately, was not able to find an API
-                                that met the budgetary restraints of the project.
-                                <br>
-                                Eventually, we found a website and article by University of Princeton
-                                researcher DUDE'S NAME, that scraped Reddit posts featuring news articles
-                                about "Florida Man".
-                            </p>
-                        </details>
-                    </div>
-                    <a href="https://github.com/meltonlogan615/FloridaMan" target="blank_">
-                        <button type="button" class="nes-btn is-primary code-link">
-                            View on GitHub
-                        </button>
-                    </a>
-                    <a href="https://apps.apple.com/us/app/florida-man-today/id1616904154">
-                        <button type="button" class="nes-btn is-success code-link">
-                            Download from the App Store
-                        </button>
-                    </a>
-                    <a href="FM-Privacy.html">
-                        <button type="button" class="nes-btn is-success code-link">
-                            Privacy Policy
-                        </button>
-                    </a>
-                </article>
-                <article class="content-image">
-                    <img src="pics/FM/Launch.jpg" alt="Screenshot of Florida Man Launch Screen"
-                        class="nes-container is-rounded app-image" id="FM-Launch">
-                    <img src="pics/FM/List.jpg" alt="Screenshot of table listing Florida Man news articles for March 15"
-                        class="app-image nes-container is-rounded" id="FM-List">
-                    <img src="pics/FM/Search.jpg"
-                        alt="Screenshot of date picker to select a date to return Flrodia Man news articles"
-                        class="app-image nes-container is-rounded" id="FM-Search">
-                </article>
+              <!-- Challenges -->
+              <details>
+                <summary class="details-title">Challenges:</summary>
+                <p class="nes-container is-rounded glass details-text">
+                  Original intent was to use a standard news API with a default
+                  parameter "Florida Man". Unfortunately, was not able to find an API
+                  that met the budgetary restraints of the project.
+                  <br>
+                  Eventually, we found a website and article by University of Princeton
+                  researcher DUDE'S NAME, that scraped Reddit posts featuring news articles
+                  about "Florida Man".
+                </p>
+              </details>
             </div>
+            <a href="https://github.com/meltonlogan615/FloridaMan" target="blank_">
+              <button type="button" class="nes-btn is-primary code-link">
+                View on GitHub
+              </button>
+            </a>
+            <a href="https://apps.apple.com/us/app/florida-man-today/id1616904154">
+              <button type="button" class="nes-btn is-success code-link">
+                Download from the App Store
+              </button>
+            </a>
+            <a href="FM-Privacy.html">
+              <button type="button" class="nes-btn is-success code-link">
+                Privacy Policy
+              </button>
+            </a>
+          </article>
+          <article class="content-image">
+            <img src="pics/FM/Launch.jpg" alt="Screenshot of Florida Man Launch Screen"
+              class="nes-container is-rounded app-image" id="FM-Launch" onclick="showImageModal()">
+            <img src="pics/FM/List.jpg" alt="Screenshot of table listing Florida Man news articles for March 15"
+              class="app-image nes-container is-rounded" id="FM-List" onclick="showImageModal()">
+            <img src="pics/FM/Search.jpg"
+              alt="Screenshot of date picker to select a date to return Flrodia Man news articles"
+              class="app-image nes-container is-rounded" id="FM-Search" onclick="showImageModal()">
+          </article>
         </div>
+      </div>
 
-        <!-- Staged Cooking  -->
-        <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
-            <p class="title">Staged Cooking</p>
+      <!-- Staged Cooking  -->
+      <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+        <p class="title">Staged Cooking</p>
 
-            <div class="content-section">
-                <article class="verbage">
+        <div class="content-section">
+          <article class="verbage">
 
-                    <h4 class="article-subtitle">Swift - UIKit</h4>
-                    <div class="verbage-text">
-                        <!-- Scope -->
-                        <details>
-                            <summary class="details-title">Scope:</summary>
-                            <p class="nes-container is-rounded glass details-text">
-                                Design and develop an app to search for receipes, then parse
-                                the instructions and ingredients into a "Step-By-Step" format.
-                            </p>
-                        </details>
-                        <!-- Desired Features -->
-                        <details class="lists">
-                            <summary class="details-title">Features:</summary>
-                            <ul class="nes-container is-rounded glass details-text work-details">
-                                <li>Save Search History</li>
-                                <li>Save Viewed History</li>
-                                <li>Save Favorites</li>
-                                <li>Save For Later</li>
-                            </ul>
-                        </details>
-                        <!-- Process -->
-                        <details class="lists">
-                            <summary class="details-title">Process:</summary>
-                            <ul class="nes-container is-rounded glass details-text">
-                                <li>Phase 1</li>
-                                <ul class="work-details">
-                                    <li>
-                                        Develop algorithm to effectively sort and organize ingredients and instructions
-                                    </li>
-                                    <li>
-                                        Find API that provides the required data
-                                    </li>
-                                </ul>
-                                <hr class="divider">
-                                <li>Phase 2</li>
-                                <ul class="work-details">
-                                    <li>Build custom Table View Cells to ensure correct layout</li>
-                                    <li>Reduce heirachtical complexity into a flattened response</li>
-                                </ul>
+            <h4 class="article-subtitle">Swift - UIKit</h4>
+            <div class="verbage-text">
+              <!-- Scope -->
+              <details>
+                <summary class="details-title">Scope:</summary>
+                <p class="nes-container is-rounded glass details-text">
+                  Design and develop an app to search for receipes, then parse
+                  the instructions and ingredients into a "Step-By-Step" format.
+                </p>
+              </details>
+              <!-- Desired Features -->
+              <details class="lists">
+                <summary class="details-title">Features:</summary>
+                <ul class="nes-container is-rounded glass details-text work-details">
+                  <li>Save Search History</li>
+                  <li>Save Viewed History</li>
+                  <li>Save Favorites</li>
+                  <li>Save For Later</li>
+                </ul>
+              </details>
+              <!-- Process -->
+              <details class="lists">
+                <summary class="details-title">Process:</summary>
+                <ul class="nes-container is-rounded glass details-text">
+                  <li>Phase 1</li>
+                  <ul class="work-details">
+                    <li>
+                      Develop algorithm to effectively sort and organize ingredients and instructions
+                    </li>
+                    <li>
+                      Find API that provides the required data
+                    </li>
+                  </ul>
+                  <hr class="divider">
+                  <li>Phase 2</li>
+                  <ul class="work-details">
+                    <li>Build custom Table View Cells to ensure correct layout</li>
+                    <li>Reduce heirachtical complexity into a flattened response</li>
+                  </ul>
 
-                                <ul>
-                        </details>
+                  <ul>
+              </details>
 
-                        <!-- Challenges -->
-                        <details>
-                            <summary class="details-title">Challenges:</summary>
-                            <p class="nes-container is-rounded glass details-text">
-                                The first API used only retured the recipe and ingredients, but no instructions.
-                                <br>
-                                The API in current use makes liberal use of Optionals and Nested JSON properties.
-                                This slowed development down significantly.
-                                <br>
-                                With every object property being Optional, checks are spread through out, including a
-                                dedicated
-                                object model that only contained a static function to parse the network call results
-                                into a [String: String] Dictionary.
-                                This had the added benefit of not having to convert data types into Unwrapped Strings,
-                                which again, would require unwrapping of
-                                Optionals.
-                                <br>
-                                As for the Nested JSON properties, the first approach involved the strict heirachy that
-                                is an exact match for the network results.
-                                This was followed by CodingKey Pattern, where all properties, including nested
-                                properties were defined withing the original model,
-                                and immediately followed with an Enumuration that conforms to the CodingKey protocol.
-                                <br>
-                                However, that was not ideal either. Once the models were restructured again into a
-                                strict heirachy, but with liberal
-                                use of generics, then we were able to proceed.
-                            </p>
-                        </details>
-                    </div>
-                    <a href="https://github.com/meltonlogan615/StagedRevisited" target="blank_">
-                        <button type="button" class="nes-btn is-primary code-link">
-                            View on GitHub
-                        </button>
-                    </a>
-                    <a href="" target="blank_">
-                        <button type="button" class="nes-btn is-disabled code-link">
-                            Currently in Early Beta.
-                        </button>
-                    </a>
-                    <a href="SC-Privacy.html" target="blank_">
-                        <button type="button" class="nes-btn is-success code-link">
-                            Privacy Policy
-                        </button>
-                    </a>
-                </article>
-                <article class="content-image">
-                    <img src="pics/Staged/Staged-Search.jpg" alt="" class="nes-container is-rounded app-image"
-                        id="Staged-Search">
-                    <img src="pics/Staged/Staged-List.jpg" alt="" class="nes-container is-rounded app-image"
-                        id="Staged-List">
-                    <img src="pics/Staged/Staged-Recipe.jpg" alt="" class="nes-container is-rounded app-image"
-                        id="Staged-Recipe">
-
-                </article>
+              <!-- Challenges -->
+              <details>
+                <summary class="details-title">Challenges:</summary>
+                <p class="nes-container is-rounded glass details-text">
+                  The first API used only retured the recipe and ingredients, but no instructions.
+                  <br>
+                  The API in current use makes liberal use of Optionals and Nested JSON properties.
+                  This slowed development down significantly.
+                  <br>
+                  With every object property being Optional, checks are spread through out, including a
+                  dedicated
+                  object model that only contained a static function to parse the network call results
+                  into a [String: String] Dictionary.
+                  This had the added benefit of not having to convert data types into Unwrapped Strings,
+                  which again, would require unwrapping of
+                  Optionals.
+                  <br>
+                  As for the Nested JSON properties, the first approach involved the strict heirachy that
+                  is an exact match for the network results.
+                  This was followed by CodingKey Pattern, where all properties, including nested
+                  properties were defined withing the original model,
+                  and immediately followed with an Enumuration that conforms to the CodingKey protocol.
+                  <br>
+                  However, that was not ideal either. Once the models were restructured again into a
+                  strict heirachy, but with liberal
+                  use of generics, then we were able to proceed.
+                </p>
+              </details>
             </div>
+            <a href="https://github.com/meltonlogan615/StagedRevisited" target="blank_">
+              <button type="button" class="nes-btn is-primary code-link">
+                View on GitHub
+              </button>
+            </a>
+            <a href="" target="blank_">
+              <button type="button" class="nes-btn is-disabled code-link">
+                Currently in Early Beta.
+              </button>
+            </a>
+            <a href="SC-Privacy.html" target="blank_">
+              <button type="button" class="nes-btn is-success code-link">
+                Privacy Policy
+              </button>
+            </a>
+          </article>
+          <article class="content-image">
+            <img src="pics/Staged/Staged-Search.jpg" alt="" class="nes-container is-rounded app-image"
+              id="Staged-Search" onclick="showImageModal()">
+            <img src="pics/Staged/Staged-List.jpg" alt="" class="nes-container is-rounded app-image" id="Staged-List"
+              onclick="showImageModal()">
+            <img src="pics/Staged/Staged-Recipe.jpg" alt="" class="nes-container is-rounded app-image"
+              id="Staged-Recipe" onclick="showImageModal()">
+
+          </article>
         </div>
+      </div>
 
-        <!-- Ghibli -->
-        <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
-            <p class="title">Studio Ghibli Reference</p>
+      <!-- Ghibli -->
+      <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+        <p class="title">Studio Ghibli Reference</p>
 
-            <div class="content-section">
-                <article class="verbage">
+        <div class="content-section">
+          <article class="verbage">
 
-                    <h4 class="article-subtitle">Swift - UIKit</h4>
-                    <div class="verbage-text">
-                        <!-- Scope -->
-                        <details>
-                            <summary class="details-title">Scope:</summary>
-                            <p class="nes-container is-rounded glass details-text">
-                                Provide a resource to view details on all Studio Ghibli films.
-                            </p>
-                        </details>
-                        <!-- Desired Features -->
-                        <details>
-                            <summary class="details-title">Features:</summary>
-                            <ul class="nes-container is-rounded glass details-text work-details">
-                                <li>View All Ghibli Films</li>
-                                <li>Option To Sort By Title</li>
-                                <li>Option To Sort By Release Date</li>
-                            </ul>
-                        </details>
-                        <!-- Process -->
-                        <details>
-                            <summary class="details-title">Process:</summary>
-                            <p class="nes-container is-rounded glass details-text">
-                            </p>
-                        </details>
-                        <!-- Challenges -->
-                        <details>
-                            <summary class="details-title">Challenges: </summary>
-                            </summary>
+            <h4 class="article-subtitle">Swift - UIKit</h4>
+            <div class="verbage-text">
+              <!-- Scope -->
+              <details>
+                <summary class="details-title">Scope:</summary>
+                <p class="nes-container is-rounded glass details-text">
+                  Provide a resource to view details on all Studio Ghibli films.
+                </p>
+              </details>
+              <!-- Desired Features -->
+              <details>
+                <summary class="details-title">Features:</summary>
+                <ul class="nes-container is-rounded glass details-text work-details">
+                  <li>View All Ghibli Films</li>
+                  <li>Option To Sort By Title</li>
+                  <li>Option To Sort By Release Date</li>
+                </ul>
+              </details>
+              <!-- Process -->
+              <details>
+                <summary class="details-title">Process:</summary>
+                <p class="nes-container is-rounded glass details-text">
+                </p>
+              </details>
+              <!-- Challenges -->
+              <details>
+                <summary class="details-title">Challenges: </summary>
+                </summary>
 
-                            <p class="nes-container is-rounded glass details-text">
-                                The original networking methods were extremely limited. These were converted to using
-                                Generics for response and JSON decoding.
-                                <br>
-                                Additionally, providing each view with full networking call and parsing was unweildy.
-                                These were extracted into an external
-                                layer to provide portability and has since become my default networking scheme.
-                            </p>
-                        </details>
-                    </div>
-                    <a href="https://github.com/meltonlogan615/Ghibli-UIKit-TableView" target="blank_">
-                        <button type="button" class="nes-btn is-primary code-link">
-                            View on GitHub
-                        </button>
-                    </a>
-
-                </article>
-                <article class="content-image">
-                    <img src="pics/Ghibli/Launch.jpg" alt="Screenshot showing Studio Ghibli Logo"
-                        class="nes-container is-rounded app-image" id="Ghib-Launch">
-                    <img src="pics/Ghibli/List.jpg" alt="Screenshot showing a table list of Studio Ghibli films"
-                        class="nes-container is-rounded app-image" id="Ghib-List">
-                    <img src="pics/Ghibli/Details.jpg" alt="Screenshot showing details of Castle in the Sky"
-                        class="nes-container is-rounded app-image" id="Ghib-Details">
-
-                </article>
+                <p class="nes-container is-rounded glass details-text">
+                  The original networking methods were extremely limited. These were converted to using
+                  Generics for response and JSON decoding.
+                  <br>
+                  Additionally, providing each view with full networking call and parsing was unweildy.
+                  These were extracted into an external
+                  layer to provide portability and has since become my default networking scheme.
+                </p>
+              </details>
             </div>
+            <a href="https://github.com/meltonlogan615/Ghibli-UIKit-TableView" target="blank_">
+              <button type="button" class="nes-btn is-primary code-link">
+                View on GitHub
+              </button>
+            </a>
+
+          </article>
+          <article class="content-image">
+            <img src="pics/Ghibli/Launch.jpg" alt="Screenshot showing Studio Ghibli Logo"
+              class="nes-container is-rounded app-image" id="Ghib-Launch" onclick="showImageModal()">
+            <img src="pics/Ghibli/List.jpg" alt="Screenshot showing a table list of Studio Ghibli films"
+              class="nes-container is-rounded app-image" id="Ghib-List" onclick="showImageModal()">
+            <img src="pics/Ghibli/Details.jpg" alt="Screenshot showing details of Castle in the Sky"
+              class="nes-container is-rounded app-image" id="Ghib-Details" onclick="showImageModal()">
+
+          </article>
         </div>
+      </div>
 
-        <!-- Swipe Snake -->
-        <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
-            <p class="title">Swipe Snake</p>
+      <!-- Swipe Snake -->
+      <div class="nes-container is-rounded with-title glass" style="margin-bottom: 4rem;">
+        <p class="title">Swipe Snake</p>
 
-            <div class="content-section">
-                <article class="verbage">
-                    <h4 class="article-subtitle">Swift - SpriteKit - SceneKit</h4>
-                    <div class="verbage-text">
-                        <!-- Scope -->
-                        <details>
-                            <summary class="details-title">Scope:</summary>
-                            <p class="nes-container is-rounded glass details-details">
-                                Build a simple, gesture based Snake Game based on the classic Nokia 3310 game.
-                            </p>
-                        </details>
-                        <!-- Desired Features -->
-                        <details>
-                            <summary class="details-title">Features:</summary>
-                            <ul class="nes-container is-rounded glass work-details">
-                                <li>Change Direction Based On Swipe Directions</li>
-                                <li>Game Board Not A Defined Grid</li>
-                            </ul>
-                        </details>
-                        <!-- Process -->
-                        <details>
-                            <summary class="details-title">Process:</summary>
-                            <ul class="nes-container is-rounded glass details-text">
-                                <li>Phase 1</li>
-                                <ul class="work-details">
-                                    <li>
-                                        Generate game board & food at random location within game board area
-                                    </li>
-                                    <li>
-                                        Generate snake at a random position with an initial direction and velocity
-                                        towards the center of the game board
-                                    </li>
-                                </ul>
-                                <hr class="divider">
-                                <li>Phase 2</li>
-                                <ul class="work-details">
-                                    <li>
-                                        When snake eats the food, that food instance is removed and new instance is
-                                        placed at another random location on the game board
-                                    </li>
-                                    <li>
-                                        Create a new snake segment to append onto the "end" of the existing snake. "End"
-                                        is defined as the opposite side of current direction to the last segement
-                                    </li>
-                                </ul>
-                                </p>
-                        </details>
+        <div class="content-section">
+          <article class="verbage">
+            <h4 class="article-subtitle">Swift - SpriteKit - SceneKit</h4>
+            <div class="verbage-text">
+              <!-- Scope -->
+              <details>
+                <summary class="details-title">Scope:</summary>
+                <p class="nes-container is-rounded glass details-details">
+                  Build a simple, gesture based Snake Game based on the classic Nokia 3310 game.
+                </p>
+              </details>
+              <!-- Desired Features -->
+              <details>
+                <summary class="details-title">Features:</summary>
+                <ul class="nes-container is-rounded glass work-details">
+                  <li>Change Direction Based On Swipe Directions</li>
+                  <li>Game Board Not A Defined Grid</li>
+                </ul>
+              </details>
+              <!-- Process -->
+              <details>
+                <summary class="details-title">Process:</summary>
+                <ul class="nes-container is-rounded glass details-text">
+                  <li>Phase 1</li>
+                  <ul class="work-details">
+                    <li>
+                      Generate game board & food at random location within game board area
+                    </li>
+                    <li>
+                      Generate snake at a random position with an initial direction and velocity
+                      towards the center of the game board
+                    </li>
+                  </ul>
+                  <hr class="divider">
+                  <li>Phase 2</li>
+                  <ul class="work-details">
+                    <li>
+                      When snake eats the food, that food instance is removed and new instance is
+                      placed at another random location on the game board
+                    </li>
+                    <li>
+                      Create a new snake segment to append onto the "end" of the existing snake. "End"
+                      is defined as the opposite side of current direction to the last segement
+                    </li>
+                  </ul>
+                  </p>
+              </details>
 
-                        <!-- Challenges -->
-                        <details>
-                            <summary class="details-title">Challenges:</summary>
-                            <p class="nes-container is-rounded glass details-text">
-                                The primary challenge of this project was largely the limitations of SceneKit and
-                                SpriteKit.<br>
-                                The interactions between a physics elements in complex organizisms, as I have found, is
-                                not ideal within the frameworks.<br>
-                                A number of approaches were applied to resolve the issues of the snake itself, including
-                                an indepth dive into SKPhysicsJoints & SKPhysicsBodies.
-                            </p>
-                        </details>
-
-
-                    </div>
-                    <a href="https://github.com/meltonlogan615/SwipeSnake" target="blank_">
-                        <button type="button" class="nes-btn is-primary code-link">
-                            View on GitHub
-                        </button>
-                    </a>
-
-                </article>
-                <article class="content-image">
-                    <img src="pics/Snake/Snake-Start.jpg" alt="" class="nes-container is-rounded app-image" id="myImg">
-                    <img src="pics/Snake/Snake-GamePlay.jpg" alt="" class="nes-container is-rounded app-image"
-                        id="Snake-GamePlay">
-                    <img src="pics/Snake/Snake-GameOver.jpg" alt="" class="nes-container is-rounded app-image"
-                        id="Snake-GameOver">
-
-                </article>
+              <!-- Challenges -->
+              <details>
+                <summary class="details-title">Challenges:</summary>
+                <p class="nes-container is-rounded glass details-text">
+                  The primary challenge of this project was largely the limitations of SceneKit and
+                  SpriteKit.<br>
+                  The interactions between a physics elements in complex organizisms, as I have found, is
+                  not ideal within the frameworks.<br>
+                  A number of approaches were applied to resolve the issues of the snake itself, including
+                  an indepth dive into SKPhysicsJoints & SKPhysicsBodies.
+                </p>
+              </details>
             </div>
+            <a href="https://github.com/meltonlogan615/SwipeSnake" target="blank_">
+              <button type="button" class="nes-btn is-primary code-link">
+                View on GitHub
+              </button>
+            </a>
+
+          </article>
+          <article class="content-image">
+            <img src="pics/Snake/Snake-Start.jpg" alt="" class="nes-container is-rounded app-image" id="myImg"
+              onclick="showImageModal()">
+            <img src="pics/Snake/Snake-GamePlay.jpg" alt="" class="nes-container is-rounded app-image"
+              id="Snake-GamePlay" onclick="showImageModal()">
+            <img src="pics/Snake/Snake-GameOver.jpg" alt="" class="nes-container is-rounded app-image"
+              id="Snake-GameOver" onclick="showImageModal()">
+
+          </article>
         </div>
-
-
+      </div>
     </section>
-
 
     <!-- WORK SECTION  -->
     <section class="work-section" id="work" style="margin-bottom: 4rem;">
-        <h2 class="section-title">Work History</h2>
-        <div class="content-section">
-            <article class="nes-container is-rounded with-title verbage glass">
-                <h3 class="article-title title">Work</h3>
-                <div class="verbage-text">
-                    <ul class="content-list">
-                        <li>Independent iOS Developer</li>
-                        <ul class="work-details">
-                            <li>See Projects Above</li>
-                        </ul>
-                        <hr class="divider">
-                        <li>Integrated Access Corp.</li>
-                        <ul class="work-details">
-                            <li>Beverage & Pharma Sales</li>
-                            <li>Fully Remote</li>
-                        </ul>
-                        <hr class="divider">
-                        <li>Freelance Front-End Web Development</li>
-                        <ul class="work-details">
-                            <li>Convert Sketch & Zepplin Files into Functional Atomic Elements for use in PHP Assembly
-                            </li>
-                            <li>Fully Remote</li>
-                        </ul>
+      <h2 class="section-title">Work History</h2>
+      <div class="content-section">
+        <article class="nes-container is-rounded with-title verbage glass">
+          <h3 class="article-title title">Work</h3>
+          <div class="verbage-text">
+            <ul class="content-list">
+              <li>Independent iOS Developer</li>
+              <ul class="work-details">
+                <li>See Projects Above</li>
+              </ul>
+              <hr class="divider">
+              <li>Integrated Access Corp.</li>
+              <ul class="work-details">
+                <li>Beverage & Pharma Sales</li>
+                <li>Fully Remote</li>
+              </ul>
+              <hr class="divider">
+              <li>Freelance Front-End Web Development</li>
+              <ul class="work-details">
+                <li>Convert Sketch & Zepplin Files into Functional Atomic Elements for use in PHP Assembly
+                </li>
+                <li>Fully Remote</li>
+              </ul>
 
-                        <hr class="divider">
-                        <li>Damar Worldwide</li>
-                        <ul class="work-details">
-                            <li>Sales Manager</li>
-                        </ul>
-                        <hr>
+              <hr class="divider">
+              <li>Damar Worldwide</li>
+              <ul class="work-details">
+                <li>Sales Manager</li>
+              </ul>
+              <hr>
 
-                    </ul>
-                </div>
-            </article>
-            <article class="nes-container is-rounded with-title verbage glass">
-                <h3 class="article-title title">Skills</h3>
-                <div class="verbage-text">
-                    <ul class="content-list">
-                        <li>App Development</li>
-                        <ul class="work-details">
-                            <li>Swift</li>
-                            <li>UIKit - Foundation</li>
-                            <li>SpriteKit / SceneKit</li>
-                            <li>MusicKit</li>
-                        </ul>
-                        <hr class="divider">
-                        <li>Web Development</li>
-                        <ul class="work-details">
-                            <li>HTML, CSS, JS (Vanilla Preferred, but none really)</li>
-                            <li>Atomic Design</li>
-                        </ul>
-                        <hr class="divider">
-                        <li>General Tech</li>
-                        <ul class="work-details">
-                            <li>Rest API</li>
-                            <li>Agile Methodology</li>
-                        </ul>
-                        <hr class="divider">
-                        <li>General Skills</li>
-                        <ul class="work-details">
-                            <li>Useless Trivia</li>
-                            <li>Cooking</li>
-                        </ul>
-                        <hr class="divider">
-                        <li>Helping You Kill Time</li>
-                        <ul class="work-details">
-                            <li><a href="pong/pong.html">Pong</a></li>
-                            <li><a href="">Space Invaders</a></li>
-                        </ul>
-                    </ul>
-                </div>
-            </article>
-        </div>
+            </ul>
+          </div>
+        </article>
+        <article class="nes-container is-rounded with-title verbage glass">
+          <h3 class="article-title title">Skills</h3>
+          <div class="verbage-text">
+            <ul class="content-list">
+              <li>App Development</li>
+              <ul class="work-details">
+                <li>Swift</li>
+                <li>UIKit - Foundation</li>
+                <li>SpriteKit / SceneKit</li>
+                <li>MusicKit</li>
+              </ul>
+              <hr class="divider">
+              <li>Web Development</li>
+              <ul class="work-details">
+                <li>HTML, CSS, JS (Vanilla Preferred, but none really)</li>
+                <li>Atomic Design</li>
+              </ul>
+              <hr class="divider">
+              <li>General Tech</li>
+              <ul class="work-details">
+                <li>Rest API</li>
+                <li>Agile Methodology</li>
+              </ul>
+              <hr class="divider">
+              <li>General Skills</li>
+              <ul class="work-details">
+                <li>Useless Trivia</li>
+                <li>Cooking</li>
+              </ul>
+              <hr class="divider">
+              <li>Helping You Kill Time</li>
+              <ul class="work-details">
+                <li><a href="pong/pong.html">Pong</a></li>
+                <li><a href="">Space Invaders</a></li>
+              </ul>
+            </ul>
+          </div>
+        </article>
+      </div>
     </section>
 
     <!-- PERSONAL INFO -->
     <section class="" id="personal" style="margin-bottom: 4rem;">
-        <h2 class="section-title" id="personal">Personal Info</h2>
-        <div class="content-section">
-            <article class="nes-container is-rounded with-title verbage glass">
-                <h3 class="article-title title">Background</h3>
-                <p class="details-text">
-                    To distill my greatest motivator into a single word: "boredom."
-                    More accurately state it, "avoiding boredom."
-                    <br>
-                    Maybe "Adversion to Stagnation" would be a better way of putting it.
-                    <br>
-                    I take great pleasure in being challenged. Be it mentally, politically, spiritually or
-                    any aspect of what I feel defines me. While Hegal's view of Thesis conflicting with Antithesis
-                    to produce a Synthesis and resulting in a new dominant Thesis seems to have vanished in the
-                    realm of policical discourse, I still hold that model to be true when discussing personal growth.
-                </p>
-            </article>
-            <article class="nes-container is-rounded with-title verbage glass">
-                <h3 class="article-title title">General Interests</h3>
-                <ul class="work-details">
-                    <li>History & Development of Monotheistic Traditions in the Western Hemisphere</li>
-                    <li>History of Rome: From Romulus - Justinian I</li>
-                    <li>History & Development of Western Music</li>
-                    <li>Chili, Fried Chicken, Milanesa y Jamon Torta</li>
-                    <li>Mutli-instrumentalst: Guitar, Bass, Banjo, Mandolin</li>
-                </ul>
-            </article>
-        </div>
+      <h2 class="section-title" id="personal">Personal Info</h2>
+      <div class="content-section">
+        <article class="nes-container is-rounded with-title verbage glass">
+          <h3 class="article-title title">Background</h3>
+          <p class="details-text">
+            To distill my greatest motivator into a single word: "boredom."
+            More accurately state it, "avoiding boredom."
+            <br>
+            Maybe "Adversion to Stagnation" would be a better way of putting it.
+            <br>
+            I take great pleasure in being challenged. Be it mentally, politically, spiritually or
+            any aspect of what I feel defines me. While Hegal's view of Thesis conflicting with Antithesis
+            to produce a Synthesis and resulting in a new dominant Thesis seems to have vanished in the
+            realm of policical discourse, I still hold that model to be true when discussing personal growth.
+          </p>
+        </article>
+        <article class="nes-container is-rounded with-title verbage glass">
+          <h3 class="article-title title">General Interests</h3>
+          <ul class="work-details">
+            <li>History & Development of Monotheistic Traditions in the Western Hemisphere</li>
+            <li>History of Rome: From Romulus - Justinian I</li>
+            <li>History & Development of Western Music</li>
+            <li>Chili, Fried Chicken, Milanesa y Jamon Torta</li>
+            <li>Mutli-instrumentalst: Guitar, Bass, Banjo, Mandolin</li>
+          </ul>
+        </article>
+      </div>
     </section>
 
     <!-- CONTACT -->
     <section class="footer" id="contact">
-        <h2 class="section-title title">Holler</h2>
-        <div class="nes-container is-rounded contact-links glass icon-list">
-            <a href="https://twitter.com/StinkyStinkFace" target="_blank" class="contact-button">
-                <img src="pics/mastodon.png" class="nes-icon is-large">
-            </a>
-            <a href="https://github.com/meltonlogan615" target="_blank" class="contact-button">
-                <i class="nes-icon github is-large"></i>
-            </a>
-            <a href="https://www.linkedin.com/in/logan-m-7924021b5/" target="_blank" class="contact-button">
-                <i class="nes-icon linkedin is-large"></i>
-            </a>
-            <!-- <a href="#contact" onclick="brokenLink()" class="contact-button">
-                <i class="nes-icon gmail is-large"></i>
-            </a> -->
-            <!-- <button id="invasion-button" class="contact-button">
-                <i class="nes-icon trophy is-large"></i>
-            </button> -->
-        </div>
+      <h2 class="section-title title">Holler</h2>
+      <div class="nes-container is-rounded contact-links glass icon-list">
+        <a href="https://twitter.com/StinkyStinkFace" target="_blank" class="contact-button">
+          <img src="pics/mastodon.png" class="nes-icon is-large">
+        </a>
+        <a href="https://github.com/meltonlogan615" target="_blank" class="contact-button">
+          <i class="nes-icon github is-large"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/logan-m-7924021b5/" target="_blank" class="contact-button">
+          <i class="nes-icon linkedin is-large"></i>
+        </a>
+        <a href="#contact" onclick="showContactModal()" class="contact-button">
+          <i class="nes-icon gmail is-large"></i>
+        </a>
+      </div>
     </section>
+  </main>
 
-    <!-- MODAL FOR IMAGES  -->
-    <div id="invasion-modal" class="modal">
-        <span class="close" id="modal-close">&times;</span>
-        <iframe src="invasion/stolen.html" frameborder="0"></iframe>
+  <!-- CONTACT MODAL -->
+  <!-- <section> -->
+  <div id="modal" class="modal">
+    <div class="modalContent">
+      <div class="modalHeader">
+        <h2 class="section-title">Holleratcha boy!</h2>
+      </div>
+      <div class="modalBody">
+        <form method="post" name="roundUpForm" action="https://api.web3forms.com/submit">
+
+          <div class="nes-field">
+            <p>
+              <label for="name">What is your name?</label>
+            </p>
+            <p class="textField">
+              <input type="text" for="name" name="name" placeholder="Arthur of Camelot" class="nes-input is-dark"
+                required>
+            </p>
+          </div>
+
+          <div class="inputSection">
+            <p>
+              <label for="serviceAddress">What is your quest?</label>
+            </p>
+            <p class="textField">
+              <input type="text" for="serviceAddress" name="serviceAddress" placeholder="To seek the Holy Grail"
+                class="nes-input is-dark" required>
+            </p>
+          </div>
+
+          <div class="inputSection">
+            <p>
+              <label for="cityStateZip">What is your favorite color?</label>
+            </p>
+            <p class="textField">
+              <input type="text" for="cityStateZip" name="cityStateZip" placeholder="Blue... no, green"
+                class="nes-input is-dark" required>
+            </p>
+          </div>
+
+          <div class="inputSection">
+            <p>
+              <label for="email">Email Address:</label>
+            </p>
+            <p class="textField">
+              <input type="text" for="email" name="email" placeholder="gchapman@pythonline.com"
+                class="nes-input is-dark" required>
+            </p>
+          </div>
+
+          <div class="inputSection">
+            <p>
+              <label for="message">Say what you need to say</label>
+            </p>
+            <p class="textArea">
+              <textarea type="text" name="message" id="message" rows="10" cols="50" class="nes-input is-dark"
+                placeholder="Ni" required></textarea>
+            </p>
+          </div>
+          <!-- <div class="h-captcha" data-captcha="true"></div> -->
+          <div class="buttonContainer inputSection">
+            <button type="cancel" name="cancel" id="cancel" value="dismissModal" class="nes-btn is-error"
+              onclick="dismissModal()">Cancel</button>
+
+            <button type="submit" name="submit" id="send" value="Send Form" class="nes-btn is-primary">Send</button>
+          </div>
+        </form>
+      </div>
     </div>
-    <script>
-        var modal = document.getElementById("invasion-modal");
-        var btn = document.getElementById("invasion-button")
-        var close = document.getElementById("modal-close")
-        btn.onclick = function () {
-            modal.style.display = "block"
-        }
-        close.onclick = function () {
-            modal.style.display = "none"
-        }
+  </div>
 
-        function brokenLink() {
-            alert("This is still being built. Sorry.")
-        }
-    </script>
+  <div id="appImgModal" class="appImgModal">
+    <div class="outerSideContainer nes-container is-rounded">
+
+      <button class="nes-btn is-rounded closeBtn is-error" id="close" onclick="dismissImgModal()">&times;</button>
+      <button class=" arrow arrowLeft" id="chevLeft">
+        <img src="pics/chevLeft-White.png" class="arrow">
+      </button>
+      <button class="arrow arrowRight" id="chevRight">
+        <img src="pics/chevRight-White.png" alt="" class="arrow">
+      </button>
+
+      <ul class="slideContainer" id="slideContainer">
+        <li class="slideCell" id="image0">
+          <img src="pics/FM/Launch.jpg" class="nes-container is-rounded app-image slideImage" id="0">
+        </li>
+        <!-- <li class="slideCell" id="image1">
+          <img src="pics/FM/Launch.jpg" class="app-image nes-container is-rounded slideImage" id="1">
+        </li> -->
+        <li class="slideCell" id="image2">
+          <img src="pics/FM/Launch.jpg" class="app-image nes-container is-rounded slideImage" id="2">
+        </li>
+      </ul>
+
+    </div>
+  </div>
+  <!-- </section> -->
+  <script src="global.js"></script>
 </body>
+
 
 </html>
